@@ -142,7 +142,7 @@
     "onEntityWalksOn": {
       "name": "TripmineEntityWalksOnTheBlock"
     },
-    "generateFeature": true,
+    "generateFeature": false,
     "restrictionBiomes": [
       {
         "value": "birch_forest"
@@ -172,7 +172,7 @@
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 2,
+    "frequencyPerChunks": 5,
     "frequencyOnChunk": 1,
     "minGenerateHeight": -64,
     "maxGenerateHeight": 320

@@ -5,10 +5,9 @@
     "dark_forest",
     "flower_forest",
     "forest",
-    "bamboo_jungle",
-    "jungle",
-    "sparse_jungle"
+    "old_growth_birch_forest",
+    "windswept_forest"
   ],
-  "features": "jokemod:tripmine",
-  "step": "underground_ores"
+  "features": "jokemod:tripmine_spawn",
+  "step": "top_layer_modification"
 }
