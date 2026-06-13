@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": [
+    "birch_forest",
+    "dark_forest",
+    "flower_forest",
+    "forest",
+    "bamboo_jungle",
+    "jungle",
+    "sparse_jungle"
+  ],
+  "features": "jokemod:tripmine",
+  "step": "underground_ores"
+}

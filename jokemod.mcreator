@@ -1,20 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "CurdMace",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "curd_mace",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jokemod/models/item/curd_mace.json",
-          "src/main/java/net/mcreator/jokemod/item/CurdMaceItem.java",
-          "src/main/resources/assets/jokemod/items/curd_mace.json"
-        ]
-      }
-    },
-    {
       "name": "CurdMaceLivingEntityIsHitWithTool",
       "type": "procedure",
       "compiles": true,
@@ -39,6 +25,99 @@
           "src/main/java/net/mcreator/jokemod/procedures/CurdMaceLivingEntityIsHitWithToolProcedure.java"
         ]
       }
+    },
+    {
+      "name": "CurdMace",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curd_mace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/curd_mace.json",
+          "src/main/java/net/mcreator/jokemod/item/CurdMaceItem.java",
+          "src/main/resources/assets/jokemod/items/curd_mace.json"
+        ]
+      }
+    },
+    {
+      "name": "TripmineEntityWalksOnTheBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripmine_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/TripmineEntityWalksOnTheBlockProcedure.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "Tripstud",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripstud",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/tripstud.json",
+          "src/main/java/net/mcreator/jokemod/item/TripstudItem.java",
+          "src/main/resources/assets/jokemod/items/tripstud.json"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "TripmineLT",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripmine_lt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/loot_table/blocks/tripmine.json"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "Tripmine",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripmine",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/blockstates/tripmine.json",
+          "src/main/resources/data/jokemod/neoforge/biome_modifier/tripmine_biome_modifier.json",
+          "src/main/resources/data/jokemod/worldgen/placed_feature/tripmine.json",
+          "src/main/resources/assets/jokemod/items/tripmine.json",
+          "src/main/resources/data/jokemod/worldgen/configured_feature/tripmine.json",
+          "src/main/java/net/mcreator/jokemod/block/TripmineBlock.java",
+          "src/main/resources/assets/jokemod/models/item/tripmine.json",
+          "src/main/resources/assets/jokemod/models/block/tripmine.json"
+        ]
+      },
+      "path": "~/trimpine"
     }
   ],
   "variable_elements": [],
@@ -50,22 +129,23 @@
   },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {
-      "item.jokemod.curd_mace": "Curd Mace"
-    }
+    "en_us": {}
   },
   "metadata": {
     "files": [
-      "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
-      "src/main/java/net/mcreator/jokemod/JokemodMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/jokemod/JokemodMod.java"
     ]
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "trimpine",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "jokemod",

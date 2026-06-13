@@ -22,6 +22,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.jokemod.init.JokemodModTabs;
 import net.mcreator.jokemod.init.JokemodModItems;
+import net.mcreator.jokemod.init.JokemodModBlocks;
 
 import javax.annotation.Nullable;
 
@@ -46,6 +47,7 @@ public class JokemodMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		JokemodModBlocks.REGISTRY.register(modEventBus);
 		JokemodModItems.REGISTRY.register(modEventBus);
 		JokemodModTabs.REGISTRY.register(modEventBus);
 		// Start of user code block mod init

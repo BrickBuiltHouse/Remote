@@ -22,6 +22,10 @@ public class JokemodModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(JokemodModItems.CURD_MACE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(JokemodModItems.TRIPSTUD.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(JokemodModBlocks.TRIPMINE.get().asItem());
 		}
 	}
 }
