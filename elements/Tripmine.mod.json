@@ -2,7 +2,7 @@
   "_fv": 79,
   "_type": "block",
   "definition": {
-    "texture": "tripmine",
+    "texture": "freddy",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -16,7 +16,7 @@
     "displayFluidOverlay": false,
     "animations": [],
     "itemTexture": "",
-    "particleTexture": "tripmine",
+    "particleTexture": "freddy",
     "blockSetType": "OAK",
     "pottedPlant": {
       "value": ""
