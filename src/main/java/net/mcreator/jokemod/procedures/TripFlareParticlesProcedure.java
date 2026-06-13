@@ -1,8 +1,6 @@
 package net.mcreator.jokemod.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.core.particles.ParticleTypes;
+import net.neoforged.bus.api.Event;
 
 public class TripFlareParticlesProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {

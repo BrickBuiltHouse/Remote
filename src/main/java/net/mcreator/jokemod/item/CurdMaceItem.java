@@ -1,26 +1,52 @@
 package net.mcreator.jokemod.item;
 
-import net.minecraft.world.item.ToolMaterial;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.tags.TagKey;
-import net.minecraft.tags.BlockTags;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.Registries;
-
-import net.mcreator.jokemod.procedures.CurdMaceLivingEntityIsHitWithToolProcedure;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 
 public class CurdMaceItem extends Item {
-	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 100, 4f, 0, 2, TagKey.create(Registries.ITEM, ResourceLocation.parse("jokemod:curd_mace_repair_items")));
 
-	public CurdMaceItem(Item.Properties properties) {
-		super(properties.pickaxe(TOOL_MATERIAL, 3f, -3f));
-	}
+    private static final double SPEED_THRESHOLD = 1.2;
+    private static final float BASE_DAMAGE = 6.0F;
 
-	@Override
-	public void hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
-		super.hurtEnemy(itemstack, entity, sourceentity);
-		CurdMaceLivingEntityIsHitWithToolProcedure.execute(entity.level(), entity, sourceentity);
-	}
+    public CurdMaceItem(Item.Properties properties) {
+        super(properties.stacksTo(1).durability(100));
+    }
+
+    @Override
+    public void hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
+        double speed = attacker.getDeltaMovement().length();
+
+        // Calculate bonus damage (scales with speed) if speed exeeds threshold.
+        float bonusDamage = 0f;
+        if (speed > SPEED_THRESHOLD) {
+            bonusDamage = (float) ((speed - SPEED_THRESHOLD) * 10.0);
+        }
+
+        // Remove all effects.
+        // (Milk effect since its made of curds :P)
+        target.removeAllEffects();
+
+        // Calculate and apply final damage. (base damage + bonus damage)
+        float finalDamage = BASE_DAMAGE + bonusDamage;
+
+        if (attacker instanceof Player player) {
+            target.hurt(player.damageSources().playerAttack(player), finalDamage);
+        } else {
+            target.hurt(attacker.damageSources().mobAttack(attacker), finalDamage);
+        }
+
+        // Self knockback. (scales with speed)
+        if (speed > SPEED_THRESHOLD) {
+            attacker.setDeltaMovement(attacker.getDeltaMovement().scale(-0.3));
+            attacker.hurtMarked = true;
+        }
+
+        // Durability loss on use.
+        if (attacker.level() instanceof ServerLevel serverLevel) {
+            stack.hurtAndBreak(1, serverLevel, attacker, item -> {});
+        }
+    }
 }

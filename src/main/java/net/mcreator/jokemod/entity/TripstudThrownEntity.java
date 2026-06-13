@@ -1,30 +1,5 @@
 package net.mcreator.jokemod.entity;
 
-import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.EntityHitResult;
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.enchantment.Enchantments;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.projectile.ItemSupplier;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.util.RandomSource;
-import net.minecraft.sounds.SoundSource;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.core.registries.BuiltInRegistries;
-
-import net.mcreator.jokemod.procedures.TripstudExplodeProcedure;
-import net.mcreator.jokemod.init.JokemodModItems;
-import net.mcreator.jokemod.init.JokemodModEntities;
-
-import javax.annotation.Nullable;
-
 public class TripstudThrownEntity extends AbstractArrow implements ItemSupplier {
 	public static final ItemStack PROJECTILE_ITEM = new ItemStack(JokemodModItems.TRIPSTUD.get());
 	private int knockback = 0;

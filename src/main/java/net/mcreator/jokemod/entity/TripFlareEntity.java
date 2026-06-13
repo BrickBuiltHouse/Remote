@@ -1,36 +1,17 @@
 package net.mcreator.jokemod.entity;
 
-import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
-import net.neoforged.neoforge.common.NeoForgeMod;
-
-import net.minecraft.world.level.ServerLevelAccessor;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.Explosion;
-import net.minecraft.world.entity.projectile.AbstractThrownPotion;
-import net.minecraft.world.entity.projectile.AbstractArrow;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.*;
-import net.minecraft.world.damagesource.DamageTypes;
-import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.DifficultyInstance;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.BuiltInRegistries;
-
-import net.mcreator.jokemod.procedures.TripFlareTriggerProcedure;
-import net.mcreator.jokemod.procedures.TripFlareParticlesProcedure;
-
-import javax.annotation.Nullable;
+import net.minecraft.nbt.Tag;
+import net.minecraft.network.syncher.EntityDataAccessor;
 
 public class TripFlareEntity extends PathfinderMob {
+
 	public TripFlareEntity(EntityType<TripFlareEntity> type, Level world) {
 		super(type, world);
 		xpReward = 0;
 		setNoAi(false);
+
 		setPersistenceRequired();
+
 	}
 
 	@Override
@@ -113,7 +94,10 @@ public class TripFlareEntity extends PathfinderMob {
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 0);
+
 		builder = builder.add(Attributes.STEP_HEIGHT, 0);
+
 		return builder;
 	}
+
 }

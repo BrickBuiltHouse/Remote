@@ -31,9 +31,6 @@
     "blockDropsTier": "WOOD",
     "blocksAffected": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onEntityHitWith": {
-      "name": "CurdMaceLivingEntityIsHitWithTool"
-    }
+    "damageOnCrafting": false
   }
 }
