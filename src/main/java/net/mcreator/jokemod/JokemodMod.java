@@ -22,6 +22,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.jokemod.init.JokemodModTabs;
 import net.mcreator.jokemod.init.JokemodModItems;
+import net.mcreator.jokemod.init.JokemodModEntities;
 import net.mcreator.jokemod.init.JokemodModBlocks;
 
 import javax.annotation.Nullable;
@@ -49,6 +50,7 @@ public class JokemodMod {
 		modEventBus.addListener(this::registerNetworking);
 		JokemodModBlocks.REGISTRY.register(modEventBus);
 		JokemodModItems.REGISTRY.register(modEventBus);
+		JokemodModEntities.REGISTRY.register(modEventBus);
 		JokemodModTabs.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init

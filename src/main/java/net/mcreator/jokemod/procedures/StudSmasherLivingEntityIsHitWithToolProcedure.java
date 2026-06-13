@@ -1,6 +1,16 @@
 package net.mcreator.jokemod.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.LightningBolt;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntitySpawnReason;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.BlockPos;
 
 public class StudSmasherLivingEntityIsHitWithToolProcedure {
 	public static void execute(LevelAccessor world, Entity entity, Entity sourceentity, ItemStack itemstack) {

@@ -190,6 +190,161 @@
         ]
       },
       "path": "~/trimpine"
+    },
+    {
+      "name": "TripstudExplode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripstud_explode",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/TripstudExplodeProcedure.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "TripstudThrown",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripstud_thrown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/entity/TripstudThrownEntity.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "TripFlareTrigger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trip_flare_trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/TripFlareTriggerProcedure.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "TripFlare",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trip_flare",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/entity/TripFlareEntity.java",
+          "src/main/resources/assets/jokemod/items/trip_flare_spawn_egg.json",
+          "src/main/java/net/mcreator/jokemod/client/renderer/TripFlareRenderer.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "StudStrikeCall",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stud_strike_call",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/StudStrikeCallProcedure.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "StudStrike",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stud_strike",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/items/stud_strike.json",
+          "src/main/resources/assets/jokemod/models/item/stud_strike.json",
+          "src/main/java/net/mcreator/jokemod/item/StudStrikeItem.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "TripFlareParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trip_flare_particles",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/TripFlareParticlesProcedure.java"
+        ]
+      },
+      "path": "~/trimpine"
     }
   ],
   "variable_elements": [],
@@ -198,6 +353,9 @@
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:StudSmasher",
       "~CUSTOM:CurdMace"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:Tripstud"
     ]
   },
   "tab_element_order": {},
@@ -205,13 +363,20 @@
     "en_us": {
       "item.jokemod.tripmine": "Tripmine",
       "item.jokemod.tripstud": "Tripstud",
-      "item.jokemod.curd_mace": "Curd Mace"
+      "item.jokemod.curd_mace": "Curd Mace",
+      "item.jokemod.stud_smasher.description_0": "Sets hit enemies on fire, or makes enemies already on fire explode.",
+      "item.jokemod.stud_smasher": "Stud Smasher",
+      "entity.jokemod.trip_flare": "Trip Flare",
+      "item.jokemod.stud_strike": "Stud Strike",
+      "item.jokemod.stud_strike.description_0": "Throws a flare that calls in an airstrike to where it lands."
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/jokemod/init/JokemodModBlocks.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModEntityRenderers.java",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModEntities.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",

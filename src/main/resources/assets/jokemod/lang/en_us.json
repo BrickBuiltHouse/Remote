@@ -1,5 +1,10 @@
 {
   "item.jokemod.tripmine": "Tripmine",
   "item.jokemod.tripstud": "Tripstud",
-  "item.jokemod.curd_mace": "Curd Mace"
+  "item.jokemod.curd_mace": "Curd Mace",
+  "item.jokemod.stud_smasher.description_0": "Sets hit enemies on fire, or makes enemies already on fire explode.",
+  "item.jokemod.stud_smasher": "Stud Smasher",
+  "entity.jokemod.trip_flare": "Trip Flare",
+  "item.jokemod.stud_strike": "Stud Strike",
+  "item.jokemod.stud_strike.description_0": "Throws a flare that calls in an airstrike to where it lands."
 }

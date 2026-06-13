@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.jokemod.item.TripstudItem;
+import net.mcreator.jokemod.item.StudStrikeItem;
 import net.mcreator.jokemod.item.StudSmasherItem;
 import net.mcreator.jokemod.item.CurdMaceItem;
 import net.mcreator.jokemod.JokemodMod;
@@ -24,11 +25,13 @@ public class JokemodModItems {
 	public static final DeferredItem<Item> TRIPSTUD;
 	public static final DeferredItem<Item> CURD_MACE;
 	public static final DeferredItem<Item> STUD_SMASHER;
+	public static final DeferredItem<Item> STUD_STRIKE;
 	static {
 		TRIPMINE = block(JokemodModBlocks.TRIPMINE);
 		TRIPSTUD = register("tripstud", TripstudItem::new);
 		CURD_MACE = register("curd_mace", CurdMaceItem::new);
 		STUD_SMASHER = register("stud_smasher", StudSmasherItem::new);
+		STUD_STRIKE = register("stud_strike", StudStrikeItem::new);
 	}
 
 	// Start of user code block custom items
