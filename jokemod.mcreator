@@ -39,11 +39,11 @@
       "registry_name": "tripmine",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jokemod/blockstates/tripmine.json",
-          "src/main/resources/assets/jokemod/items/tripmine.json",
-          "src/main/java/net/mcreator/jokemod/block/TripmineBlock.java",
           "src/main/resources/assets/jokemod/models/item/tripmine.json",
-          "src/main/resources/assets/jokemod/models/block/tripmine.json"
+          "src/main/resources/assets/jokemod/models/block/tripmine.json",
+          "src/main/java/net/mcreator/jokemod/block/TripmineBlock.java",
+          "src/main/resources/assets/jokemod/items/tripmine.json",
+          "src/main/resources/assets/jokemod/blockstates/tripmine.json"
         ]
       },
       "path": "~/trimpine"
@@ -56,9 +56,9 @@
       "registry_name": "tripstud",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jokemod/items/tripstud.json",
           "src/main/resources/assets/jokemod/models/item/tripstud.json",
-          "src/main/java/net/mcreator/jokemod/item/TripstudItem.java",
-          "src/main/resources/assets/jokemod/items/tripstud.json"
+          "src/main/java/net/mcreator/jokemod/item/TripstudItem.java"
         ]
       },
       "path": "~/trimpine"
@@ -84,9 +84,9 @@
       "registry_name": "tripmine_spawn",
       "metadata": {
         "files": [
+          "src/main/resources/data/jokemod/neoforge/biome_modifier/tripmine_spawn_biome_modifier.json",
           "src/main/resources/data/jokemod/worldgen/placed_feature/tripmine_spawn.json",
-          "src/main/resources/data/jokemod/worldgen/configured_feature/tripmine_spawn.json",
-          "src/main/resources/data/jokemod/neoforge/biome_modifier/tripmine_spawn_biome_modifier.json"
+          "src/main/resources/data/jokemod/worldgen/configured_feature/tripmine_spawn.json"
         ]
       },
       "path": "~/trimpine"
@@ -95,16 +95,15 @@
       "name": "CurdMace",
       "type": "tool",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "curd_mace",
       "metadata": {
         "files": [
+          "src/main/resources/assets/jokemod/items/curd_mace.json",
           "src/main/resources/assets/jokemod/models/item/curd_mace.json",
-          "src/main/java/net/mcreator/jokemod/item/CurdMaceItem.java",
-          "src/main/resources/assets/jokemod/items/curd_mace.json"
+          "src/main/java/net/mcreator/jokemod/item/CurdMaceItem.java"
         ]
-      },
-      "path": "~/CurdMace"
+      }
     },
     {
       "name": "StudSmasher",
@@ -165,6 +164,161 @@
         ]
       },
       "path": "~/trimpine"
+    },
+    {
+      "name": "TripFlareParticles",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trip_flare_particles",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/TripFlareParticlesProcedure.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "TripFlareTrigger",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trip_flare_trigger",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/TripFlareTriggerProcedure.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "TripstudExplode",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripstud_explode",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/TripstudExplodeProcedure.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "TripstudThrown",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripstud_thrown",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/entity/TripstudThrownEntity.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "StudStrike",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stud_strike",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/items/stud_strike.json",
+          "src/main/java/net/mcreator/jokemod/item/StudStrikeItem.java",
+          "src/main/resources/assets/jokemod/models/item/stud_strike.json"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "StudStrikeCall",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "stud_strike_call",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/StudStrikeCallProcedure.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "TripFlare",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trip_flare",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/entity/TripFlareEntity.java",
+          "src/main/java/net/mcreator/jokemod/client/renderer/TripFlareRenderer.java",
+          "src/main/resources/assets/jokemod/items/trip_flare_spawn_egg.json"
+        ]
+      },
+      "path": "~/trimpine"
     }
   ],
   "variable_elements": [],
@@ -190,10 +344,10 @@
       "src/main/java/net/mcreator/jokemod/init/JokemodModBlocks.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/jokemod/JokemodMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/META-INF/accesstransformer.cfg"
     ]
   },
   "foldersRoot": {
