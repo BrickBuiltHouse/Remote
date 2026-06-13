@@ -24,6 +24,8 @@ public class JokemodModTabs {
 			tabData.accept(JokemodModBlocks.TRIPMINE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(JokemodModItems.TRIPSTUD.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(JokemodModItems.CURD_MACE.get());
 		}
 	}
 }

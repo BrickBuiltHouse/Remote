@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.jokemod.item.TripstudItem;
+import net.mcreator.jokemod.item.CurdMaceItem;
 import net.mcreator.jokemod.JokemodMod;
 
 import java.util.function.Function;
@@ -20,9 +21,11 @@ public class JokemodModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(JokemodMod.MODID);
 	public static final DeferredItem<Item> TRIPMINE;
 	public static final DeferredItem<Item> TRIPSTUD;
+	public static final DeferredItem<Item> CURD_MACE;
 	static {
 		TRIPMINE = block(JokemodModBlocks.TRIPMINE);
 		TRIPSTUD = register("tripstud", TripstudItem::new);
+		CURD_MACE = register("curd_mace", CurdMaceItem::new);
 	}
 
 	// Start of user code block custom items
