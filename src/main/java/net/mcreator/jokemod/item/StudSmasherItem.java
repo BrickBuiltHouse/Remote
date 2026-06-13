@@ -1,23 +1,5 @@
 package net.mcreator.jokemod.item;
 
-import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.component.TooltipDisplay;
-import net.minecraft.world.item.component.ItemAttributeModifiers;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlotGroup;
-import net.minecraft.network.chat.Component;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.jokemod.procedures.StudSmasherLivingEntityIsHitWithToolProcedure;
-
-import java.util.function.Consumer;
-
 public class StudSmasherItem extends Item {
 	public StudSmasherItem(Item.Properties properties) {
 		super(properties.durability(95).attributes(ItemAttributeModifiers.builder().add(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_ID, 3, AttributeModifier.Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
@@ -38,7 +20,6 @@ public class StudSmasherItem extends Item {
 	@Override
 	public void hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		itemstack.hurtAndBreak(2, entity, LivingEntity.getSlotForHand(entity.getUsedItemHand()));
-		StudSmasherLivingEntityIsHitWithToolProcedure.execute(entity.level(), entity, sourceentity, itemstack);
 	}
 
 	@Override
