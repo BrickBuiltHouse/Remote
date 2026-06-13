@@ -23,8 +23,8 @@
   "metadata": {
     "files": [
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/jokemod/JokemodMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/jokemod/JokemodMod.java"
     ]
   },
   "foldersRoot": {
