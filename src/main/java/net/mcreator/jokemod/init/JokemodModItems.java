@@ -19,13 +19,13 @@ import java.util.function.Function;
 
 public class JokemodModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(JokemodMod.MODID);
-	public static final DeferredItem<Item> TRIPMINE;
-	public static final DeferredItem<Item> TRIPSTUD;
 	public static final DeferredItem<Item> CURD_MACE;
+	public static final DeferredItem<Item> TRIPSTUD;
+	public static final DeferredItem<Item> TRIPMINE;
 	static {
-		TRIPMINE = block(JokemodModBlocks.TRIPMINE);
-		TRIPSTUD = register("tripstud", TripstudItem::new);
 		CURD_MACE = register("curd_mace", CurdMaceItem::new);
+		TRIPSTUD = register("tripstud", TripstudItem::new);
+		TRIPMINE = block(JokemodModBlocks.TRIPMINE);
 	}
 
 	// Start of user code block custom items
