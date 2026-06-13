@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a  ",
+    "   ",
+    "  b"
+  ],
+  "key": {
+    "a": "minecraft:magma_block",
+    "b": "minecraft:lapis_block"
+  },
+  "result": {
+    "id": "minecraft:blackstone_wall",
+    "count": 1
+  }
+}
