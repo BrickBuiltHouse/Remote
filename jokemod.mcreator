@@ -129,13 +129,20 @@
   },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.jokemod.curd_mace": "Curd Mace",
+      "item.jokemod.tripstud": "Tripstud",
+      "item.jokemod.tripmine": "Tripmine"
+    }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/jokemod/init/JokemodModBlocks.java",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/jokemod/JokemodMod.java"
+      "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
+      "src/main/java/net/mcreator/jokemod/JokemodMod.java",
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {

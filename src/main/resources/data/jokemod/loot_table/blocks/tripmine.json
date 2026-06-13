@@ -45,7 +45,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "jokemod:deleted_mod_element",
+          "name": "jokemod:tripmine",
           "weight": 1,
           "conditions": [
             {

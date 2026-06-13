@@ -1,6 +1,13 @@
 package net.mcreator.jokemod.block;
 
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.jokemod.procedures.TripmineEntityWalksOnTheBlockProcedure;
 
 public class TripmineBlock extends Block {
 	public TripmineBlock(BlockBehaviour.Properties properties) {
