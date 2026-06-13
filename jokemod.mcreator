@@ -115,7 +115,8 @@
         "files": [
           "src/main/java/net/mcreator/jokemod/procedures/CurdMaceLivingEntityIsHitWithToolProcedure.java"
         ]
-      }
+      },
+      "path": "~/CurdMace"
     },
     {
       "name": "CurdMace",
@@ -129,7 +130,8 @@
           "src/main/resources/assets/jokemod/models/item/curd_mace.json",
           "src/main/java/net/mcreator/jokemod/item/CurdMaceItem.java"
         ]
-      }
+      },
+      "path": "~/CurdMace"
     }
   ],
   "variable_elements": [],
@@ -163,6 +165,10 @@
     "children": [
       {
         "name": "trimpine",
+        "children": []
+      },
+      {
+        "name": "CurdMace",
         "children": []
       }
     ]
