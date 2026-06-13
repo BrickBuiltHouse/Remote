@@ -51,7 +51,11 @@
     "maxStackSize": 64,
     "rarity": "COMMON",
     "immuneToFire": false,
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "DECORATIONS"
+      }
+    ],
     "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
@@ -59,7 +63,7 @@
     "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "requiresCorrectTool": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -139,16 +143,38 @@
       "name": "TripmineEntityWalksOnTheBlock"
     },
     "generateFeature": true,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "birch_forest"
+      },
+      {
+        "value": "roofed_forest"
+      },
+      {
+        "value": "mutated_forest"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "bamboo_jungle"
+      },
+      {
+        "value": "jungle"
+      },
+      {
+        "value": "jungle_edge"
+      }
+    ],
     "blocksToReplace": [
       {
         "value": "Blocks.GRASS"
       }
     ],
     "generationShape": "UNIFORM",
-    "frequencyPerChunks": 1,
+    "frequencyPerChunks": 2,
     "frequencyOnChunk": 1,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "minGenerateHeight": -64,
+    "maxGenerateHeight": 320
   }
 }

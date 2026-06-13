@@ -40,7 +40,8 @@
         "files": [
           "src/main/java/net/mcreator/jokemod/procedures/TripmineEntityWalksOnTheBlockProcedure.java"
         ]
-      }
+      },
+      "path": "~/trimpine"
     },
     {
       "name": "Tripmine",
@@ -57,10 +58,38 @@
           "src/main/resources/data/jokemod/worldgen/placed_feature/tripmine.json",
           "src/main/resources/assets/jokemod/items/tripmine.json",
           "src/main/resources/assets/jokemod/blockstates/tripmine.json",
-          "src/main/resources/data/jokemod/loot_table/blocks/tripmine.json",
           "src/main/resources/data/jokemod/worldgen/configured_feature/tripmine.json"
         ]
-      }
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "Tripstud",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripstud",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/items/tripstud.json",
+          "src/main/resources/assets/jokemod/models/item/tripstud.json",
+          "src/main/java/net/mcreator/jokemod/item/TripstudItem.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "TripmineLT",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripmine_lt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/loot_table/blocks/tripmine.json"
+        ]
+      },
+      "path": "~/trimpine"
     }
   ],
   "variable_elements": [],
@@ -69,7 +98,8 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.jokemod.tripmine": "Tripmine"
+      "item.jokemod.tripmine": "Tripmine",
+      "item.jokemod.tripstud": "Tripstud"
     }
   },
   "metadata": {
@@ -78,12 +108,18 @@
       "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
       "src/main/java/net/mcreator/jokemod/JokemodMod.java"
     ]
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "trimpine",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "jokemod",

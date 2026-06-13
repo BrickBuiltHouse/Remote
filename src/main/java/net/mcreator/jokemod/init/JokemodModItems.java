@@ -11,6 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
+import net.mcreator.jokemod.item.TripstudItem;
 import net.mcreator.jokemod.JokemodMod;
 
 import java.util.function.Function;
@@ -18,8 +19,10 @@ import java.util.function.Function;
 public class JokemodModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(JokemodMod.MODID);
 	public static final DeferredItem<Item> TRIPMINE;
+	public static final DeferredItem<Item> TRIPSTUD;
 	static {
 		TRIPMINE = block(JokemodModBlocks.TRIPMINE);
+		TRIPSTUD = register("tripstud", TripstudItem::new);
 	}
 
 	// Start of user code block custom items
