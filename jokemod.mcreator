@@ -1,17 +1,55 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Licker",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "licker",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/items/licker.json",
+          "src/main/resources/assets/jokemod/models/item/licker.json",
+          "src/main/java/net/mcreator/jokemod/item/LickerItem.java"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:minecraft:shovels": [
+      "~CUSTOM:Licker"
+    ],
+    "ITEMS:jokemod:licker_repair_items": [
+      "~Items.ROTTEN_FLESH",
+      "~Items.COOKED_MUTTON",
+      "~Items.MUTTON",
+      "~Items.COOKED_RABBIT",
+      "~Items.RABBIT",
+      "~Items.COOKED_CHICKEN",
+      "~Items.CHICKEN",
+      "~Items.COOKED_BEEF",
+      "~Items.BEEF",
+      "~Items.COOKED_PORKCHOP",
+      "~Items.PORKCHOP",
+      "~Items.FISH#1",
+      "~Items.FISH#0"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.jokemod.licker": "Licker"
+    }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/java/net/mcreator/jokemod/JokemodMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
+      "src/main/java/net/mcreator/jokemod/JokemodMod.java"
     ]
   },
   "foldersRoot": {
