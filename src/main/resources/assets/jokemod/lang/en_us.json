@@ -1,5 +1,7 @@
 {
   "item.jokemod.tripmine": "Tripmine",
   "item.jokemod.tripstud": "Tripstud",
-  "item.jokemod.curd_mace": "Curd Mace"
+  "item.jokemod.curd_mace": "Curd Mace",
+  "item.jokemod.stud_smasher.description_0": "Sets hit enemies on fire, or makes enemies already on fire explode.",
+  "item.jokemod.stud_smasher": "Stud Smasher"
 }

@@ -39,11 +39,11 @@
       "registry_name": "tripmine",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jokemod/models/item/tripmine.json",
-          "src/main/resources/assets/jokemod/models/block/tripmine.json",
-          "src/main/java/net/mcreator/jokemod/block/TripmineBlock.java",
+          "src/main/resources/assets/jokemod/blockstates/tripmine.json",
           "src/main/resources/assets/jokemod/items/tripmine.json",
-          "src/main/resources/assets/jokemod/blockstates/tripmine.json"
+          "src/main/java/net/mcreator/jokemod/block/TripmineBlock.java",
+          "src/main/resources/assets/jokemod/models/item/tripmine.json",
+          "src/main/resources/assets/jokemod/models/block/tripmine.json"
         ]
       },
       "path": "~/trimpine"
@@ -56,9 +56,9 @@
       "registry_name": "tripstud",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jokemod/items/tripstud.json",
           "src/main/resources/assets/jokemod/models/item/tripstud.json",
-          "src/main/java/net/mcreator/jokemod/item/TripstudItem.java"
+          "src/main/java/net/mcreator/jokemod/item/TripstudItem.java",
+          "src/main/resources/assets/jokemod/items/tripstud.json"
         ]
       },
       "path": "~/trimpine"
@@ -84,52 +84,27 @@
       "registry_name": "tripmine_spawn",
       "metadata": {
         "files": [
-          "src/main/resources/data/jokemod/neoforge/biome_modifier/tripmine_spawn_biome_modifier.json",
           "src/main/resources/data/jokemod/worldgen/placed_feature/tripmine_spawn.json",
-          "src/main/resources/data/jokemod/worldgen/configured_feature/tripmine_spawn.json"
+          "src/main/resources/data/jokemod/worldgen/configured_feature/tripmine_spawn.json",
+          "src/main/resources/data/jokemod/neoforge/biome_modifier/tripmine_spawn_biome_modifier.json"
         ]
       },
       "path": "~/trimpine"
     },
     {
-      "name": "CurdMaceLivingEntityIsHitWithTool",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "curd_mace_living_entity_is_hit_with_tool",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/jokemod/procedures/CurdMaceLivingEntityIsHitWithToolProcedure.java"
-        ]
-      }
-    },
-    {
       "name": "CurdMace",
       "type": "tool",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "curd_mace",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jokemod/items/curd_mace.json",
           "src/main/resources/assets/jokemod/models/item/curd_mace.json",
-          "src/main/java/net/mcreator/jokemod/item/CurdMaceItem.java"
+          "src/main/java/net/mcreator/jokemod/item/CurdMaceItem.java",
+          "src/main/resources/assets/jokemod/items/curd_mace.json"
         ]
-      }
+      },
+      "path": "~/CurdMace"
     },
     {
       "name": "StudSmasher",
@@ -205,7 +180,9 @@
     "en_us": {
       "item.jokemod.tripmine": "Tripmine",
       "item.jokemod.tripstud": "Tripstud",
-      "item.jokemod.curd_mace": "Curd Mace"
+      "item.jokemod.curd_mace": "Curd Mace",
+      "item.jokemod.stud_smasher.description_0": "Sets hit enemies on fire, or makes enemies already on fire explode.",
+      "item.jokemod.stud_smasher": "Stud Smasher"
     }
   },
   "metadata": {
@@ -213,10 +190,10 @@
       "src/main/java/net/mcreator/jokemod/init/JokemodModBlocks.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/jokemod/JokemodMod.java",
-      "src/main/resources/META-INF/accesstransformer.cfg"
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
