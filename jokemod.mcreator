@@ -130,12 +130,73 @@
           "src/main/java/net/mcreator/jokemod/item/CurdMaceItem.java"
         ]
       }
+    },
+    {
+      "name": "StudSmasherLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stud_smasher_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/StudSmasherLivingEntityIsHitWithToolProcedure.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "StudSmasher",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stud_smasher",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/item/StudSmasherItem.java",
+          "src/main/resources/assets/jokemod/models/item/stud_smasher.json",
+          "src/main/resources/assets/jokemod/items/stud_smasher.json"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "StudSmasherRP",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stud_smasher_rp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/stud_smasher_rp.json",
+          "src/main/resources/data/jokemod/advancement/recipes/stud_smasher_rp.json"
+        ]
+      },
+      "path": "~/trimpine"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:StudSmasher",
       "~CUSTOM:CurdMace"
     ]
   },
@@ -144,7 +205,9 @@
     "en_us": {
       "item.jokemod.tripmine": "Tripmine",
       "item.jokemod.tripstud": "Tripstud",
-      "item.jokemod.curd_mace": "Curd Mace"
+      "item.jokemod.curd_mace": "Curd Mace",
+      "item.jokemod.stud_smasher": "Stud Smasher",
+      "item.jokemod.stud_smasher.description_0": "Sets hit enemies on fire, or makes enemies already on fire explode."
     }
   },
   "metadata": {

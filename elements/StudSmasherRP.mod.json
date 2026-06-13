@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:Tripstud"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Tripstud"
+      },
+      {
+        "value": "CUSTOM:Tripstud"
+      },
+      {
+        "value": "CUSTOM:Tripstud"
+      },
+      {
+        "value": "CUSTOM:Tripstud"
+      },
+      {
+        "value": "CUSTOM:Tripstud"
+      },
+      {
+        "value": "CUSTOM:Tripstud"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.STICK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:StudSmasher"
+    },
+    "name": "stud_smasher_rp",
+    "namespace": "mod"
+  }
+}
