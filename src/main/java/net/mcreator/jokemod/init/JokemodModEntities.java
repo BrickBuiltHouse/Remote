@@ -20,7 +20,6 @@ import net.minecraft.core.registries.Registries;
 import net.mcreator.jokemod.entity.TripstudThrownEntity;
 import net.mcreator.jokemod.entity.TripFlareEntity;
 import net.mcreator.jokemod.entity.SteroidThrownEntity;
-import net.mcreator.jokemod.entity.BloodGusherEntity;
 import net.mcreator.jokemod.JokemodMod;
 
 @EventBusSubscriber
@@ -34,10 +33,6 @@ public class JokemodModEntities {
 					.sized(0.5f, 0.5f));
 	public static final DeferredHolder<EntityType<?>, EntityType<SteroidThrownEntity>> STEROID_THROWN = register("steroid_thrown",
 			EntityType.Builder.<SteroidThrownEntity>of(SteroidThrownEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final DeferredHolder<EntityType<?>, EntityType<BloodGusherEntity>> BLOOD_GUSHER = register("blood_gusher",
-			EntityType.Builder.<BloodGusherEntity>of(BloodGusherEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-
-					.ridingOffset(-0.6f).sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -48,12 +43,10 @@ public class JokemodModEntities {
 	@SubscribeEvent
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		TripFlareEntity.init(event);
-		BloodGusherEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(TRIP_FLARE.get(), TripFlareEntity.createAttributes().build());
-		event.put(BLOOD_GUSHER.get(), BloodGusherEntity.createAttributes().build());
 	}
 }

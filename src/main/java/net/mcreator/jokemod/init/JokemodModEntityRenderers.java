@@ -11,7 +11,6 @@ import net.neoforged.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.mcreator.jokemod.client.renderer.TripFlareRenderer;
-import net.mcreator.jokemod.client.renderer.BloodGusherRenderer;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class JokemodModEntityRenderers {
@@ -20,6 +19,5 @@ public class JokemodModEntityRenderers {
 		event.registerEntityRenderer(JokemodModEntities.TRIPSTUD_THROWN.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JokemodModEntities.TRIP_FLARE.get(), TripFlareRenderer::new);
 		event.registerEntityRenderer(JokemodModEntities.STEROID_THROWN.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(JokemodModEntities.BLOOD_GUSHER.get(), BloodGusherRenderer::new);
 	}
 }

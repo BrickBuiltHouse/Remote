@@ -8,7 +8,6 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredHolder;
 
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
@@ -33,7 +32,6 @@ public class JokemodModItems {
 	public static final DeferredItem<Item> CURD_BLOCK;
 	public static final DeferredItem<Item> STEROID;
 	public static final DeferredItem<Item> THE_KNIFE;
-	public static final DeferredItem<Item> BLOOD_GUSHER_SPAWN_EGG;
 	public static final DeferredItem<Item> METAL_BAT;
 	static {
 		TRIPMINE = block(JokemodModBlocks.TRIPMINE);
@@ -50,7 +48,6 @@ public class JokemodModItems {
 		CURD_BLOCK = block(JokemodModBlocks.CURD_BLOCK);
 		STEROID = register("steroid", SteroidItem::new);
 		THE_KNIFE = register("the_knife", TheKnifeItem::new);
-		BLOOD_GUSHER_SPAWN_EGG = register("blood_gusher_spawn_egg", properties -> new SpawnEggItem(JokemodModEntities.BLOOD_GUSHER.get(), properties));
 		METAL_BAT = register("metal_bat", MetalBatItem::new);
 	}
 
