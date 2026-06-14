@@ -495,7 +495,8 @@
         "files": [
           "src/main/java/net/mcreator/jokemod/potion/JumpLockMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "Drools",
@@ -711,7 +712,6 @@
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:Rake",
       "~CUSTOM:StudSmasher",
       "~CUSTOM:CurdMace"
     ],
@@ -755,7 +755,11 @@
       "painting.jokemod.drools.title": "The 3 Drools",
       "painting.jokemod.drools.author": "someone i used to know",
       "item.jokemod.rake": "Rake",
-      "item.jokemod.rake.description_0": "right click to lunge"
+      "item.jokemod.rake.description_0": "right click to lunge",
+      "item.jokemod.the_knife": "The Knife",
+      "effect.jokemod.bleed": "Bleed",
+      "item.jokemod.curd": "Curd",
+      "item.jokemod.curd_block": "Curd Block"
     }
   },
   "metadata": {

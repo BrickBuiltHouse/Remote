@@ -17,5 +17,9 @@
   "painting.jokemod.drools.title": "The 3 Drools",
   "painting.jokemod.drools.author": "someone i used to know",
   "item.jokemod.rake": "Rake",
-  "item.jokemod.rake.description_0": "right click to lunge"
+  "item.jokemod.rake.description_0": "right click to lunge",
+  "item.jokemod.the_knife": "The Knife",
+  "effect.jokemod.bleed": "Bleed",
+  "item.jokemod.curd": "Curd",
+  "item.jokemod.curd_block": "Curd Block"
 }

@@ -10,7 +10,7 @@
     "a": "jokemod:curd"
   },
   "result": {
-    "id": "jokemod:deleted_mod_element",
+    "id": "jokemod:curd_block",
     "count": 1
   }
 }
