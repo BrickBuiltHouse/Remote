@@ -12,7 +12,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "brewingInputStack": {
-      "value": "POTION:HEALING"
+      "value": "POTION:STRENGTH"
     },
     "brewingIngredientStack": {
       "value": "CUSTOM:Curd"
