@@ -797,7 +797,11 @@
       "item.jokemod.rake.description_0": "right click to lunge",
       "item.jokemod.curd_mace": "Curd Mace",
       "item.jokemod.curd": "Curd",
-      "item.jokemod.curd_block": "Curd Block"
+      "item.jokemod.curd_block": "Curd Block",
+      "item.jokemod.steroid": "Steroid",
+      "effect.jokemod.roid_rage": "Roid Rage",
+      "item.jokemod.the_knife": "The Knife",
+      "effect.jokemod.bleed": "Bleed"
     }
   },
   "metadata": {
