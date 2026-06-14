@@ -804,6 +804,19 @@
       "path": "~/MetalBat"
     },
     {
+      "name": "MetalBatRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_bat_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/metal_bat_recepie.json"
+        ]
+      },
+      "path": "~/MetalBat"
+    },
+    {
       "name": "SteroidRecepie",
       "type": "recipe",
       "compiles": true,
@@ -817,17 +830,30 @@
       "path": "~/Steroid"
     },
     {
-      "name": "MetalBatRecepie",
-      "type": "recipe",
+      "name": "IAMGREEN",
+      "type": "painting",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "metal_bat_recepie",
+      "registry_name": "iamgreen",
       "metadata": {
         "files": [
-          "src/main/resources/data/jokemod/recipe/metal_bat_recepie.json"
+          "src/main/resources/data/jokemod/painting_variant/iamgreen.json"
         ]
       },
-      "path": "~/MetalBat"
+      "path": "~/Paintings"
+    },
+    {
+      "name": "SteveDribble",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steve_dribble",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/painting_variant/steve_dribble.json"
+        ]
+      },
+      "path": "~/Paintings"
     }
   ],
   "variable_elements": [],
@@ -884,7 +910,11 @@
       "item.jokemod.the_knife": "The Knife",
       "effect.jokemod.bleed": "Bleed",
       "item.jokemod.blood_gusher_spawn_egg": "Blood Gusher Spawn Egg",
-      "entity.jokemod.blood_gusher": "Blood Gusher"
+      "entity.jokemod.blood_gusher": "Blood Gusher",
+      "painting.jokemod.iamgreen.title": "§eI AM GREEN",
+      "painting.jokemod.iamgreen.author": "§8???",
+      "painting.jokemod.steve_dribble.title": "§eSteve Dribble",
+      "painting.jokemod.steve_dribble.author": "§7Classy Chair"
     }
   },
   "metadata": {
@@ -893,13 +923,13 @@
       "src/main/java/net/mcreator/jokemod/init/JokemodModMobEffects.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModBlocks.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
-      "src/main/java/net/mcreator/jokemod/init/JokemodModEntities.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModEntityRenderers.java",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModEntities.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/jokemod/JokemodMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/META-INF/accesstransformer.cfg"
     ]
   },
   "foldersRoot": {

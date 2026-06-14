@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "jokemod:drools"
+    "jokemod:drools",
+    "jokemod:iamgreen",
+    "jokemod:steve_dribble"
   ]
 }
