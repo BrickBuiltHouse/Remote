@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "jokemod:curd_block",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "jokemod:curd_mace",
+    "count": 1
+  }
+}

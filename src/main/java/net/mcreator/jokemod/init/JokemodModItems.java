@@ -20,7 +20,6 @@ public class JokemodModItems {
 	public static final DeferredRegister.Items REGISTRY = DeferredRegister.createItems(JokemodMod.MODID);
 	public static final DeferredItem<Item> TRIPMINE;
 	public static final DeferredItem<Item> TRIPSTUD;
-	public static final DeferredItem<Item> CURD_MACE;
 	public static final DeferredItem<Item> STUD_SMASHER;
 	public static final DeferredItem<Item> STUD_STRIKE;
 	public static final DeferredItem<Item> BRICK_WALL_HELMET;
@@ -28,10 +27,12 @@ public class JokemodModItems {
 	public static final DeferredItem<Item> BRICK_WALL_LEGGINGS;
 	public static final DeferredItem<Item> BRICK_WALL_BOOTS;
 	public static final DeferredItem<Item> RAKE;
+	public static final DeferredItem<Item> CURD_MACE;
+	public static final DeferredItem<Item> CURD;
+	public static final DeferredItem<Item> CURD_BLOCK;
 	static {
 		TRIPMINE = block(JokemodModBlocks.TRIPMINE);
 		TRIPSTUD = register("tripstud", TripstudItem::new);
-		CURD_MACE = register("curd_mace", CurdMaceItem::new);
 		STUD_SMASHER = register("stud_smasher", StudSmasherItem::new);
 		STUD_STRIKE = register("stud_strike", StudStrikeItem::new);
 		BRICK_WALL_HELMET = register("brick_wall_helmet", BrickWallItem.Helmet::new);
@@ -39,6 +40,9 @@ public class JokemodModItems {
 		BRICK_WALL_LEGGINGS = register("brick_wall_leggings", BrickWallItem.Leggings::new);
 		BRICK_WALL_BOOTS = register("brick_wall_boots", BrickWallItem.Boots::new);
 		RAKE = register("rake", RakeItem::new);
+		CURD_MACE = register("curd_mace", CurdMaceItem::new);
+		CURD = register("curd", CurdItem::new);
+		CURD_BLOCK = block(JokemodModBlocks.CURD_BLOCK);
 	}
 
 	// Start of user code block custom items

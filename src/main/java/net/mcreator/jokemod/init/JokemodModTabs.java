@@ -24,15 +24,19 @@ public class JokemodModTabs {
 			tabData.accept(JokemodModBlocks.TRIPMINE.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(JokemodModItems.TRIPSTUD.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-			tabData.accept(JokemodModItems.CURD_MACE.get());
-			tabData.accept(JokemodModItems.RAKE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(JokemodModItems.STUD_SMASHER.get());
 			tabData.accept(JokemodModItems.BRICK_WALL_HELMET.get());
 			tabData.accept(JokemodModItems.BRICK_WALL_CHESTPLATE.get());
 			tabData.accept(JokemodModItems.BRICK_WALL_LEGGINGS.get());
 			tabData.accept(JokemodModItems.BRICK_WALL_BOOTS.get());
+			tabData.accept(JokemodModItems.CURD_MACE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(JokemodModItems.RAKE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+			tabData.accept(JokemodModItems.CURD.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+			tabData.accept(JokemodModBlocks.CURD_BLOCK.get().asItem());
 		}
 	}
 }

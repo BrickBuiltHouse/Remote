@@ -1,7 +1,6 @@
 {
   "item.jokemod.tripmine": "Tripmine",
   "item.jokemod.tripstud": "Tripstud",
-  "item.jokemod.curd_mace": "Curd Mace",
   "item.jokemod.stud_smasher.description_0": "Sets hit enemies on fire, or makes enemies already on fire explode.",
   "item.jokemod.stud_smasher": "Stud Smasher",
   "item.jokemod.stud_strike.description_0": "Throws a flare that calls in an airstrike to where it lands.",
@@ -17,5 +16,8 @@
   "painting.jokemod.drools.title": "The 3 Drools",
   "painting.jokemod.drools.author": "someone i used to know",
   "item.jokemod.rake": "Rake",
-  "item.jokemod.rake.description_0": "right click to lunge"
+  "item.jokemod.rake.description_0": "right click to lunge",
+  "item.jokemod.curd_mace": "Curd Mace",
+  "item.jokemod.curd": "Curd",
+  "item.jokemod.curd_block": "Curd Block"
 }

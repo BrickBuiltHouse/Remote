@@ -1,8 +1,6 @@
 {
   "replace": false,
   "values": [
-    "jokemod:stud_smasher",
-    "jokemod:curd_mace",
-    "jokemod:rake"
+    "jokemod:stud_smasher"
   ]
 }

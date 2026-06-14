@@ -39,11 +39,11 @@
       "registry_name": "tripmine",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jokemod/models/item/tripmine.json",
-          "src/main/resources/assets/jokemod/models/block/tripmine.json",
-          "src/main/java/net/mcreator/jokemod/block/TripmineBlock.java",
+          "src/main/resources/assets/jokemod/blockstates/tripmine.json",
           "src/main/resources/assets/jokemod/items/tripmine.json",
-          "src/main/resources/assets/jokemod/blockstates/tripmine.json"
+          "src/main/java/net/mcreator/jokemod/block/TripmineBlock.java",
+          "src/main/resources/assets/jokemod/models/item/tripmine.json",
+          "src/main/resources/assets/jokemod/models/block/tripmine.json"
         ]
       },
       "path": "~/trimpine"
@@ -56,9 +56,9 @@
       "registry_name": "tripstud",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jokemod/items/tripstud.json",
           "src/main/resources/assets/jokemod/models/item/tripstud.json",
-          "src/main/java/net/mcreator/jokemod/item/TripstudItem.java"
+          "src/main/java/net/mcreator/jokemod/item/TripstudItem.java",
+          "src/main/resources/assets/jokemod/items/tripstud.json"
         ]
       },
       "path": "~/trimpine"
@@ -84,26 +84,12 @@
       "registry_name": "tripmine_spawn",
       "metadata": {
         "files": [
-          "src/main/resources/data/jokemod/neoforge/biome_modifier/tripmine_spawn_biome_modifier.json",
           "src/main/resources/data/jokemod/worldgen/placed_feature/tripmine_spawn.json",
-          "src/main/resources/data/jokemod/worldgen/configured_feature/tripmine_spawn.json"
+          "src/main/resources/data/jokemod/worldgen/configured_feature/tripmine_spawn.json",
+          "src/main/resources/data/jokemod/neoforge/biome_modifier/tripmine_spawn_biome_modifier.json"
         ]
       },
       "path": "~/trimpine"
-    },
-    {
-      "name": "CurdMace",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "curd_mace",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jokemod/items/curd_mace.json",
-          "src/main/resources/assets/jokemod/models/item/curd_mace.json",
-          "src/main/java/net/mcreator/jokemod/item/CurdMaceItem.java"
-        ]
-      }
     },
     {
       "name": "StudSmasher",
@@ -264,8 +250,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jokemod/items/stud_strike.json",
-          "src/main/resources/assets/jokemod/models/item/stud_strike.json",
-          "src/main/java/net/mcreator/jokemod/item/StudStrikeItem.java"
+          "src/main/java/net/mcreator/jokemod/item/StudStrikeItem.java",
+          "src/main/resources/assets/jokemod/models/item/stud_strike.json"
         ]
       },
       "path": "~/trimpine"
@@ -314,8 +300,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/jokemod/entity/TripFlareEntity.java",
-          "src/main/resources/assets/jokemod/items/trip_flare_spawn_egg.json",
-          "src/main/java/net/mcreator/jokemod/client/renderer/TripFlareRenderer.java"
+          "src/main/java/net/mcreator/jokemod/client/renderer/TripFlareRenderer.java",
+          "src/main/resources/assets/jokemod/items/trip_flare_spawn_egg.json"
         ]
       },
       "path": "~/trimpine"
@@ -328,17 +314,17 @@
       "registry_name": "brick_wall",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/jokemod/item/BrickWallItem.java",
-          "src/main/resources/assets/jokemod/items/brick_wall_helmet.json",
-          "src/main/resources/assets/jokemod/items/brick_wall_boots.json",
-          "src/main/resources/assets/jokemod/models/item/brick_wall_boots.json",
-          "src/main/resources/assets/jokemod/equipment/brick_wall.json",
-          "src/main/resources/assets/jokemod/models/item/brick_wall_leggings.json",
-          "src/main/java/net/mcreator/jokemod/client/renderer/item/BrickWallArmor.java",
           "src/main/resources/assets/jokemod/models/item/brick_wall_chestplate.json",
           "src/main/resources/assets/jokemod/items/brick_wall_chestplate.json",
+          "src/main/resources/assets/jokemod/items/brick_wall_helmet.json",
+          "src/main/resources/assets/jokemod/items/brick_wall_boots.json",
+          "src/main/resources/assets/jokemod/equipment/brick_wall.json",
+          "src/main/resources/assets/jokemod/models/item/brick_wall_helmet.json",
+          "src/main/java/net/mcreator/jokemod/item/BrickWallItem.java",
+          "src/main/java/net/mcreator/jokemod/client/renderer/item/BrickWallArmor.java",
+          "src/main/resources/assets/jokemod/models/item/brick_wall_leggings.json",
           "src/main/resources/assets/jokemod/items/brick_wall_leggings.json",
-          "src/main/resources/assets/jokemod/models/item/brick_wall_helmet.json"
+          "src/main/resources/assets/jokemod/models/item/brick_wall_boots.json"
         ]
       },
       "path": "~/brick wall"
@@ -405,8 +391,8 @@
       "registry_name": "brick_helmet",
       "metadata": {
         "files": [
-          "src/main/resources/data/jokemod/recipe/brick_helmet.json",
-          "src/main/resources/data/jokemod/advancement/recipes/brick_helmet.json"
+          "src/main/resources/data/jokemod/advancement/recipes/brick_helmet.json",
+          "src/main/resources/data/jokemod/recipe/brick_helmet.json"
         ]
       },
       "path": "~/brick wall"
@@ -419,8 +405,8 @@
       "registry_name": "brick_chestplate",
       "metadata": {
         "files": [
-          "src/main/resources/data/jokemod/advancement/recipes/brick_chestplate.json",
-          "src/main/resources/data/jokemod/recipe/brick_chestplate.json"
+          "src/main/resources/data/jokemod/recipe/brick_chestplate.json",
+          "src/main/resources/data/jokemod/advancement/recipes/brick_chestplate.json"
         ]
       },
       "path": "~/brick wall"
@@ -447,8 +433,8 @@
       "registry_name": "brick_feet",
       "metadata": {
         "files": [
-          "src/main/resources/data/jokemod/advancement/recipes/brick_feet.json",
-          "src/main/resources/data/jokemod/recipe/brick_feet.json"
+          "src/main/resources/data/jokemod/recipe/brick_feet.json",
+          "src/main/resources/data/jokemod/advancement/recipes/brick_feet.json"
         ]
       },
       "path": "~/brick wall"
@@ -561,15 +547,102 @@
         ]
       },
       "path": "~/rake"
+    },
+    {
+      "name": "CurdMace",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "curd_mace",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/curd_mace.json",
+          "src/main/java/net/mcreator/jokemod/item/CurdMaceItem.java",
+          "src/main/resources/assets/jokemod/items/curd_mace.json"
+        ]
+      },
+      "path": "~/Curd"
+    },
+    {
+      "name": "Curd",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curd",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/items/curd.json",
+          "src/main/java/net/mcreator/jokemod/item/CurdItem.java",
+          "src/main/resources/assets/jokemod/models/item/curd.json"
+        ]
+      },
+      "path": "~/Curd"
+    },
+    {
+      "name": "CurdBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curd_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/block/curd_block.json",
+          "src/main/resources/assets/jokemod/items/curd_block.json",
+          "src/main/resources/data/jokemod/loot_table/blocks/curd_block.json",
+          "src/main/java/net/mcreator/jokemod/block/CurdBlockBlock.java",
+          "src/main/resources/assets/jokemod/models/item/curd_block.json",
+          "src/main/resources/assets/jokemod/blockstates/curd_block.json"
+        ]
+      },
+      "path": "~/Curd"
+    },
+    {
+      "name": "CurdRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curd_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/advancement/recipes/curd_recepie.json",
+          "src/main/resources/data/jokemod/recipe/curd_recepie.json"
+        ]
+      },
+      "path": "~/Curd"
+    },
+    {
+      "name": "CurdBlockRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curd_block_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/advancement/recipes/curd_block_recepie.json",
+          "src/main/resources/data/jokemod/recipe/curd_block_recepie.json"
+        ]
+      },
+      "path": "~/Curd"
+    },
+    {
+      "name": "CurdMaceRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curd_mace_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/curd_mace_recepie.json"
+        ]
+      },
+      "path": "~/Curd"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:Rake",
-      "~CUSTOM:StudSmasher",
-      "~CUSTOM:CurdMace"
+      "~CUSTOM:StudSmasher"
     ],
     "ITEMS:minecraft:head_armor": [
       "~CUSTOM:BrickWall.helmet"
@@ -592,7 +665,6 @@
     "en_us": {
       "item.jokemod.tripmine": "Tripmine",
       "item.jokemod.tripstud": "Tripstud",
-      "item.jokemod.curd_mace": "Curd Mace",
       "item.jokemod.stud_smasher.description_0": "Sets hit enemies on fire, or makes enemies already on fire explode.",
       "item.jokemod.stud_smasher": "Stud Smasher",
       "item.jokemod.stud_strike.description_0": "Throws a flare that calls in an airstrike to where it lands.",
@@ -608,7 +680,10 @@
       "painting.jokemod.drools.title": "The 3 Drools",
       "painting.jokemod.drools.author": "someone i used to know",
       "item.jokemod.rake": "Rake",
-      "item.jokemod.rake.description_0": "right click to lunge"
+      "item.jokemod.rake.description_0": "right click to lunge",
+      "item.jokemod.curd_mace": "Curd Mace",
+      "item.jokemod.curd": "Curd",
+      "item.jokemod.curd_block": "Curd Block"
     }
   },
   "metadata": {
@@ -617,22 +692,18 @@
       "src/main/java/net/mcreator/jokemod/init/JokemodModMobEffects.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModBlocks.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
-      "src/main/java/net/mcreator/jokemod/init/JokemodModEntityRenderers.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModEntities.java",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModEntityRenderers.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/jokemod/JokemodMod.java",
-      "src/main/resources/META-INF/accesstransformer.cfg"
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {
     "name": "~",
     "children": [
-      {
-        "name": "CurdMace",
-        "children": []
-      },
       {
         "name": "trimpine",
         "children": []
@@ -647,6 +718,10 @@
       },
       {
         "name": "rake",
+        "children": []
+      },
+      {
+        "name": "Curd",
         "children": []
       }
     ]
