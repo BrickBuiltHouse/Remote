@@ -31,6 +31,7 @@ public class JokemodModTabs {
 			tabData.accept(JokemodModItems.BRICK_WALL_LEGGINGS.get());
 			tabData.accept(JokemodModItems.BRICK_WALL_BOOTS.get());
 			tabData.accept(JokemodModItems.CURD_MACE.get());
+			tabData.accept(JokemodModItems.THE_KNIFE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(JokemodModItems.RAKE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {

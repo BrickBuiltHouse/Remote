@@ -1,15 +1,5 @@
 package net.mcreator.jokemod.potion;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.particles.ParticleTypes;
-
-import net.mcreator.jokemod.JokemodMod;
-
 public class RoidRageMobEffect extends MobEffect {
 	public RoidRageMobEffect() {
 		super(MobEffectCategory.BENEFICIAL, -13312, mobEffectInstance -> ParticleTypes.FLAME);

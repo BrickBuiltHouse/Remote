@@ -638,19 +638,6 @@
       "path": "~/Curd"
     },
     {
-      "name": "RoidRage",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "roid_rage",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jokemod/potion/RoidRageMobEffect.java"
-        ]
-      },
-      "path": "~/Steroid"
-    },
-    {
       "name": "Steroid",
       "type": "item",
       "compiles": true,
@@ -677,6 +664,89 @@
         ]
       },
       "path": "~/Steroid"
+    },
+    {
+      "name": "RoidRage",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roid_rage",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/potion/RoidRageMobEffect.java"
+        ]
+      },
+      "path": "~/Steroid"
+    },
+    {
+      "name": "BleedUsDry",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleed_us_dry",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/BleedUsDryProcedure.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "StabbyStab",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stabby_stab",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/StabbyStabProcedure.java"
+        ]
+      },
+      "path": "~/British glory"
+    },
+    {
+      "name": "TheKnife",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_knife",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/the_knife.json",
+          "src/main/java/net/mcreator/jokemod/item/TheKnifeItem.java",
+          "src/main/resources/assets/jokemod/items/the_knife.json"
+        ]
+      },
+      "path": "~/British glory"
+    },
+    {
+      "name": "Bleed",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/potion/BleedMobEffect.java"
+        ]
+      },
+      "path": "~/Effects"
     }
   ],
   "variable_elements": [],
@@ -699,6 +769,9 @@
     ],
     "ITEMS:jokemod:brick_wall_repair_items": [
       "~Items.BRICK"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:TheKnife"
     ]
   },
   "tab_element_order": {},
@@ -724,9 +797,7 @@
       "item.jokemod.rake.description_0": "right click to lunge",
       "item.jokemod.curd_mace": "Curd Mace",
       "item.jokemod.curd": "Curd",
-      "item.jokemod.curd_block": "Curd Block",
-      "effect.jokemod.roid_rage": "Roid Rage",
-      "item.jokemod.steroid": "Steroid"
+      "item.jokemod.curd_block": "Curd Block"
     }
   },
   "metadata": {
@@ -748,15 +819,7 @@
     "name": "~",
     "children": [
       {
-        "name": "trimpine",
-        "children": []
-      },
-      {
         "name": "brick wall",
-        "children": []
-      },
-      {
-        "name": "Paintings",
         "children": []
       },
       {
@@ -764,11 +827,27 @@
         "children": []
       },
       {
-        "name": "Curd",
+        "name": "trimpine",
+        "children": []
+      },
+      {
+        "name": "Paintings",
         "children": []
       },
       {
         "name": "Steroid",
+        "children": []
+      },
+      {
+        "name": "British glory",
+        "children": []
+      },
+      {
+        "name": "Curd",
+        "children": []
+      },
+      {
+        "name": "Effects",
         "children": []
       }
     ]
