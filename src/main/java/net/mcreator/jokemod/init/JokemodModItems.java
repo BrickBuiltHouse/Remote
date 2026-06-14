@@ -28,6 +28,7 @@ public class JokemodModItems {
 	public static final DeferredItem<Item> BRICK_WALL_LEGGINGS;
 	public static final DeferredItem<Item> BRICK_WALL_BOOTS;
 	public static final DeferredItem<Item> RAKE;
+	public static final DeferredItem<Item> THE_KNIFE;
 	static {
 		TRIPMINE = block(JokemodModBlocks.TRIPMINE);
 		TRIPSTUD = register("tripstud", TripstudItem::new);
@@ -39,6 +40,7 @@ public class JokemodModItems {
 		BRICK_WALL_LEGGINGS = register("brick_wall_leggings", BrickWallItem.Leggings::new);
 		BRICK_WALL_BOOTS = register("brick_wall_boots", BrickWallItem.Boots::new);
 		RAKE = register("rake", RakeItem::new);
+		THE_KNIFE = register("the_knife", TheKnifeItem::new);
 	}
 
 	// Start of user code block custom items

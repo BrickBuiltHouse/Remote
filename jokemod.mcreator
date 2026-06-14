@@ -495,7 +495,8 @@
         "files": [
           "src/main/java/net/mcreator/jokemod/potion/JumpLockMobEffect.java"
         ]
-      }
+      },
+      "path": "~/Effects"
     },
     {
       "name": "Drools",
@@ -561,6 +562,76 @@
         ]
       },
       "path": "~/rake"
+    },
+    {
+      "name": "Bleed",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/potion/BleedMobEffect.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "BleedUsDry",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleed_us_dry",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/BleedUsDryProcedure.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "StabbyStab",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stabby_stab",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/StabbyStabProcedure.java"
+        ]
+      },
+      "path": "~/British glory"
+    },
+    {
+      "name": "TheKnife",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_knife",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/the_knife.json",
+          "src/main/java/net/mcreator/jokemod/item/TheKnifeItem.java",
+          "src/main/resources/assets/jokemod/items/the_knife.json"
+        ]
+      },
+      "path": "~/British glory"
     }
   ],
   "variable_elements": [],
@@ -585,6 +656,9 @@
     ],
     "ITEMS:jokemod:brick_wall_repair_items": [
       "~Items.BRICK"
+    ],
+    "ITEMS:minecraft:enchantable/durability": [
+      "~CUSTOM:TheKnife"
     ]
   },
   "tab_element_order": {},
@@ -608,7 +682,9 @@
       "painting.jokemod.drools.title": "The 3 Drools",
       "painting.jokemod.drools.author": "someone i used to know",
       "item.jokemod.rake": "Rake",
-      "item.jokemod.rake.description_0": "right click to lunge"
+      "item.jokemod.rake.description_0": "right click to lunge",
+      "effect.jokemod.bleed": "Bleed",
+      "item.jokemod.the_knife": "The Knife"
     }
   },
   "metadata": {
@@ -647,6 +723,14 @@
       },
       {
         "name": "rake",
+        "children": []
+      },
+      {
+        "name": "British glory",
+        "children": []
+      },
+      {
+        "name": "Effects",
         "children": []
       }
     ]

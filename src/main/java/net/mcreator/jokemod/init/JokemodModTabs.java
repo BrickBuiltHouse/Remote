@@ -33,6 +33,7 @@ public class JokemodModTabs {
 			tabData.accept(JokemodModItems.BRICK_WALL_CHESTPLATE.get());
 			tabData.accept(JokemodModItems.BRICK_WALL_LEGGINGS.get());
 			tabData.accept(JokemodModItems.BRICK_WALL_BOOTS.get());
+			tabData.accept(JokemodModItems.THE_KNIFE.get());
 		}
 	}
 }
