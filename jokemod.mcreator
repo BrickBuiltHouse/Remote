@@ -495,8 +495,7 @@
         "files": [
           "src/main/java/net/mcreator/jokemod/potion/JumpLockMobEffect.java"
         ]
-      },
-      "path": "~/Effects"
+      }
     },
     {
       "name": "Drools",
@@ -564,19 +563,6 @@
       "path": "~/rake"
     },
     {
-      "name": "Bleed",
-      "type": "potioneffect",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bleed",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jokemod/potion/BleedMobEffect.java"
-        ]
-      },
-      "path": "~/Effects"
-    },
-    {
       "name": "BleedUsDry",
       "type": "procedure",
       "compiles": true,
@@ -632,6 +618,93 @@
         ]
       },
       "path": "~/British glory"
+    },
+    {
+      "name": "Bleed",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleed",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/potion/BleedMobEffect.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "CurdMaceRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curd_mace_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/curd_mace_recepie.json"
+        ]
+      },
+      "path": "~/Curd"
+    },
+    {
+      "name": "Curd",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/item/CurdItem.java",
+          "src/main/resources/assets/jokemod/models/item/curd.json",
+          "src/main/resources/assets/jokemod/items/curd.json"
+        ]
+      },
+      "path": "~/Curd"
+    },
+    {
+      "name": "CurdRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curd_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/advancement/recipes/curd_recepie.json",
+          "src/main/resources/data/jokemod/recipe/curd_recepie.json"
+        ]
+      },
+      "path": "~/Curd"
+    },
+    {
+      "name": "CurdBlockRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curd_block_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/curd_block_recepie.json",
+          "src/main/resources/data/jokemod/advancement/recipes/curd_block_recepie.json"
+        ]
+      },
+      "path": "~/Curd"
+    },
+    {
+      "name": "CurdBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "curd_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/curd_block.json",
+          "src/main/resources/assets/jokemod/blockstates/curd_block.json",
+          "src/main/resources/data/jokemod/loot_table/blocks/curd_block.json",
+          "src/main/resources/assets/jokemod/items/curd_block.json",
+          "src/main/java/net/mcreator/jokemod/block/CurdBlockBlock.java",
+          "src/main/resources/assets/jokemod/models/block/curd_block.json"
+        ]
+      },
+      "path": "~/Curd"
     }
   ],
   "variable_elements": [],
@@ -682,9 +755,7 @@
       "painting.jokemod.drools.title": "The 3 Drools",
       "painting.jokemod.drools.author": "someone i used to know",
       "item.jokemod.rake": "Rake",
-      "item.jokemod.rake.description_0": "right click to lunge",
-      "effect.jokemod.bleed": "Bleed",
-      "item.jokemod.the_knife": "The Knife"
+      "item.jokemod.rake.description_0": "right click to lunge"
     }
   },
   "metadata": {
@@ -706,19 +777,7 @@
     "name": "~",
     "children": [
       {
-        "name": "CurdMace",
-        "children": []
-      },
-      {
-        "name": "trimpine",
-        "children": []
-      },
-      {
         "name": "brick wall",
-        "children": []
-      },
-      {
-        "name": "Paintings",
         "children": []
       },
       {
@@ -726,7 +785,19 @@
         "children": []
       },
       {
+        "name": "trimpine",
+        "children": []
+      },
+      {
+        "name": "Paintings",
+        "children": []
+      },
+      {
         "name": "British glory",
+        "children": []
+      },
+      {
+        "name": "Curd",
         "children": []
       },
       {

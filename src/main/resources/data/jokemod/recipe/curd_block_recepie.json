@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "jokemod:curd"
+  },
+  "result": {
+    "id": "jokemod:deleted_mod_element",
+    "count": 1
+  }
+}

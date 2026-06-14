@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:wheat",
+    "minecraft:milk_bucket"
+  ],
+  "result": {
+    "id": "jokemod:curd",
+    "count": 3
+  }
+}

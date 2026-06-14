@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "jokemod:block/curd_block",
+    "up": "jokemod:block/curd_block",
+    "north": "jokemod:block/curd_block",
+    "east": "jokemod:block/curd_block",
+    "south": "jokemod:block/curd_block",
+    "west": "jokemod:block/curd_block",
+    "particle": "jokemod:block/curd_block"
+  },
+  "render_type": "solid"
+}

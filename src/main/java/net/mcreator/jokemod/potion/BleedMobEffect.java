@@ -1,17 +1,5 @@
 package net.mcreator.jokemod.potion;
 
-import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.effect.MobEffectCategory;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.particles.ParticleTypes;
-
-import net.mcreator.jokemod.procedures.BleedUsDryProcedure;
-import net.mcreator.jokemod.JokemodMod;
-
 public class BleedMobEffect extends MobEffect {
 	public BleedMobEffect() {
 		super(MobEffectCategory.HARMFUL, -65536, mobEffectInstance -> ParticleTypes.DRIPPING_DRIPSTONE_LAVA);
