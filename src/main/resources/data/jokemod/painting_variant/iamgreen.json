@@ -1,0 +1,11 @@
+{
+  "asset_id": "jokemod:iamgreen",
+  "height": 2,
+  "width": 3,
+  "title": {
+    "translate": "painting.jokemod.iamgreen.title"
+  },
+  "author": {
+    "translate": "painting.jokemod.iamgreen.author"
+  }
+}

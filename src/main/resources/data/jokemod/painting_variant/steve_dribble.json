@@ -1,0 +1,11 @@
+{
+  "asset_id": "jokemod:steve_dribble",
+  "height": 3,
+  "width": 4,
+  "title": {
+    "translate": "painting.jokemod.steve_dribble.title"
+  },
+  "author": {
+    "translate": "painting.jokemod.steve_dribble.author"
+  }
+}

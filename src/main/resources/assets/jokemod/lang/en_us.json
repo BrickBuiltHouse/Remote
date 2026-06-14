@@ -25,5 +25,9 @@
   "item.jokemod.the_knife": "The Knife",
   "effect.jokemod.bleed": "Bleed",
   "item.jokemod.blood_gusher_spawn_egg": "Blood Gusher Spawn Egg",
-  "entity.jokemod.blood_gusher": "Blood Gusher"
+  "entity.jokemod.blood_gusher": "Blood Gusher",
+  "painting.jokemod.iamgreen.title": "§eI AM GREEN",
+  "painting.jokemod.iamgreen.author": "§8???",
+  "painting.jokemod.steve_dribble.title": "§eSteve Dribble",
+  "painting.jokemod.steve_dribble.author": "§7Classy Chair"
 }
