@@ -747,12 +747,28 @@
         ]
       },
       "path": "~/Effects"
+    },
+    {
+      "name": "MetalBat",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "metal_bat",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/items/metal_bat.json",
+          "src/main/resources/assets/jokemod/models/item/metal_bat.json",
+          "src/main/java/net/mcreator/jokemod/item/MetalBatItem.java"
+        ]
+      },
+      "path": "~/MetalBat"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:MetalBat",
       "~CUSTOM:StudSmasher"
     ],
     "ITEMS:minecraft:head_armor": [
@@ -801,7 +817,8 @@
       "item.jokemod.steroid": "Steroid",
       "effect.jokemod.roid_rage": "Roid Rage",
       "item.jokemod.the_knife": "The Knife",
-      "effect.jokemod.bleed": "Bleed"
+      "effect.jokemod.bleed": "Bleed",
+      "item.jokemod.metal_bat": "Metal Bat"
     }
   },
   "metadata": {
@@ -852,6 +869,10 @@
       },
       {
         "name": "Effects",
+        "children": []
+      },
+      {
+        "name": "MetalBat",
         "children": []
       }
     ]
