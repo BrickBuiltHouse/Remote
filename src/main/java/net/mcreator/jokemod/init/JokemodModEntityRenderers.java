@@ -18,5 +18,6 @@ public class JokemodModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(JokemodModEntities.TRIPSTUD_THROWN.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(JokemodModEntities.TRIP_FLARE.get(), TripFlareRenderer::new);
+		event.registerEntityRenderer(JokemodModEntities.STEROID_THROWN.get(), ThrownItemRenderer::new);
 	}
 }

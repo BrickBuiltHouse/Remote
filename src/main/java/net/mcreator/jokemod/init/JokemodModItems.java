@@ -30,6 +30,7 @@ public class JokemodModItems {
 	public static final DeferredItem<Item> CURD_MACE;
 	public static final DeferredItem<Item> CURD;
 	public static final DeferredItem<Item> CURD_BLOCK;
+	public static final DeferredItem<Item> STEROID;
 	static {
 		TRIPMINE = block(JokemodModBlocks.TRIPMINE);
 		TRIPSTUD = register("tripstud", TripstudItem::new);
@@ -43,6 +44,7 @@ public class JokemodModItems {
 		CURD_MACE = register("curd_mace", CurdMaceItem::new);
 		CURD = register("curd", CurdItem::new);
 		CURD_BLOCK = block(JokemodModBlocks.CURD_BLOCK);
+		STEROID = register("steroid", SteroidItem::new);
 	}
 
 	// Start of user code block custom items

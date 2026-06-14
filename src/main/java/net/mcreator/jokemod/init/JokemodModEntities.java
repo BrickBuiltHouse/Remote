@@ -19,6 +19,7 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.jokemod.entity.TripstudThrownEntity;
 import net.mcreator.jokemod.entity.TripFlareEntity;
+import net.mcreator.jokemod.entity.SteroidThrownEntity;
 import net.mcreator.jokemod.JokemodMod;
 
 @EventBusSubscriber
@@ -30,6 +31,8 @@ public class JokemodModEntities {
 			EntityType.Builder.<TripFlareEntity>of(TripFlareEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3).fireImmune()
 
 					.sized(0.5f, 0.5f));
+	public static final DeferredHolder<EntityType<?>, EntityType<SteroidThrownEntity>> STEROID_THROWN = register("steroid_thrown",
+			EntityType.Builder.<SteroidThrownEntity>of(SteroidThrownEntity::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities

@@ -35,6 +35,7 @@ public class JokemodModTabs {
 			tabData.accept(JokemodModItems.RAKE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(JokemodModItems.CURD.get());
+			tabData.accept(JokemodModItems.STEROID.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(JokemodModBlocks.CURD_BLOCK.get().asItem());
 		}

@@ -1,0 +1,46 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Roid Rage",
+    "icon": "roid_rage",
+    "color": {
+      "value": -13312,
+      "falpha": 0.0
+    },
+    "particle": {
+      "value": "FLAME"
+    },
+    "onAddedSound": {
+      "value": "entity.endermen.scream"
+    },
+    "isInstant": false,
+    "mobEffectCategory": "BENEFICIAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "ATTACK_SPEED"
+        },
+        "amount": 0.2,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": 0.2,
+        "operation": "ADD_VALUE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": 0.2,
+        "operation": "ADD_VALUE"
+      }
+    ]
+  }
+}
