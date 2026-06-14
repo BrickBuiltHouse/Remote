@@ -40,6 +40,8 @@ public class JokemodModTabs {
 			tabData.accept(JokemodModItems.STEROID.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(JokemodModBlocks.CURD_BLOCK.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+			tabData.accept(JokemodModItems.BLOOD_GUSHER_SPAWN_EGG.get());
 		}
 	}
 }

@@ -802,6 +802,32 @@
         ]
       },
       "path": "~/MetalBat"
+    },
+    {
+      "name": "SteroidRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steroid_recepie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/recipe/brewing/SteroidRecepieBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Steroid"
+    },
+    {
+      "name": "MetalBatRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_bat_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/metal_bat_recepie.json"
+        ]
+      },
+      "path": "~/MetalBat"
     }
   ],
   "variable_elements": [],
@@ -867,13 +893,13 @@
       "src/main/java/net/mcreator/jokemod/init/JokemodModMobEffects.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModBlocks.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
-      "src/main/java/net/mcreator/jokemod/init/JokemodModEntityRenderers.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModEntities.java",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModEntityRenderers.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
-      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/jokemod/JokemodMod.java",
-      "src/main/resources/META-INF/accesstransformer.cfg"
+      "src/main/resources/pack.mcmeta"
     ]
   },
   "foldersRoot": {

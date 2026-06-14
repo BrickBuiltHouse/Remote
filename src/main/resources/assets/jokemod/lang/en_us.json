@@ -24,5 +24,6 @@
   "effect.jokemod.roid_rage": "Roid Rage",
   "item.jokemod.the_knife": "The Knife",
   "effect.jokemod.bleed": "Bleed",
-  "item.jokemod.metal_bat": "Metal Bat"
+  "item.jokemod.blood_gusher_spawn_egg": "Blood Gusher Spawn Egg",
+  "entity.jokemod.blood_gusher": "Blood Gusher"
 }
