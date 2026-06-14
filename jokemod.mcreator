@@ -724,7 +724,7 @@
       "name": "TheKnife",
       "type": "item",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "the_knife",
       "metadata": {
         "files": [
@@ -747,6 +747,46 @@
         ]
       },
       "path": "~/Effects"
+    },
+    {
+      "name": "BloodGusher",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_gusher",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/entity/BloodGusherEntity.java",
+          "src/main/resources/assets/jokemod/models/item/blood_gusher_spawn_egg.json",
+          "src/main/resources/assets/jokemod/items/blood_gusher_spawn_egg.json",
+          "src/main/resources/data/jokemod/neoforge/biome_modifier/blood_gusher_biome_modifier.json",
+          "src/main/java/net/mcreator/jokemod/client/renderer/BloodGusherRenderer.java"
+        ]
+      },
+      "path": "~/British glory"
+    },
+    {
+      "name": "BloodGusherStab",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_gusher_stab",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/BloodGusherStabProcedure.java"
+        ]
+      },
+      "path": "~/British glory"
     }
   ],
   "variable_elements": [],
@@ -801,7 +841,9 @@
       "item.jokemod.steroid": "Steroid",
       "effect.jokemod.roid_rage": "Roid Rage",
       "item.jokemod.the_knife": "The Knife",
-      "effect.jokemod.bleed": "Bleed"
+      "effect.jokemod.bleed": "Bleed",
+      "item.jokemod.blood_gusher_spawn_egg": "Blood Gusher Spawn Egg",
+      "entity.jokemod.blood_gusher": "Blood Gusher"
     }
   },
   "metadata": {
@@ -810,13 +852,13 @@
       "src/main/java/net/mcreator/jokemod/init/JokemodModMobEffects.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModBlocks.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
-      "src/main/java/net/mcreator/jokemod/init/JokemodModEntities.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModEntityRenderers.java",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModEntities.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
-      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/jokemod/JokemodMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/META-INF/accesstransformer.cfg"
     ]
   },
   "foldersRoot": {
