@@ -768,7 +768,6 @@
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:pickaxes": [
-      "~CUSTOM:MetalBat",
       "~CUSTOM:StudSmasher"
     ],
     "ITEMS:minecraft:head_armor": [
