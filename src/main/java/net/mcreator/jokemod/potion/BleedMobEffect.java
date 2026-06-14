@@ -15,7 +15,7 @@ import net.mcreator.jokemod.JokemodMod;
 public class BleedMobEffect extends MobEffect {
 	public BleedMobEffect() {
 		super(MobEffectCategory.HARMFUL, -65536, mobEffectInstance -> ParticleTypes.DRIPPING_DRIPSTONE_LAVA);
-		this.addAttributeModifier(Attributes.MAX_HEALTH, ResourceLocation.fromNamespaceAndPath(JokemodMod.MODID, "effect.bleed_0"), -1, AttributeModifier.Operation.ADD_VALUE);
+		this.addAttributeModifier(Attributes.ARMOR, ResourceLocation.fromNamespaceAndPath(JokemodMod.MODID, "effect.bleed_0"), -1, AttributeModifier.Operation.ADD_VALUE);
 	}
 
 	@Override

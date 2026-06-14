@@ -22,7 +22,7 @@
     "modifiers": [
       {
         "attribute": {
-          "value": "MAX_HEALTH"
+          "value": "ARMOR"
         },
         "amount": -1.0,
         "operation": "ADD_VALUE"
