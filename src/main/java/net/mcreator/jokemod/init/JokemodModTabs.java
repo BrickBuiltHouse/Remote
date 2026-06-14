@@ -26,6 +26,7 @@ public class JokemodModTabs {
 			tabData.accept(JokemodModItems.TRIPSTUD.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(JokemodModItems.CURD_MACE.get());
+			tabData.accept(JokemodModItems.RAKE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(JokemodModItems.STUD_SMASHER.get());
 			tabData.accept(JokemodModItems.BRICK_WALL_HELMET.get());

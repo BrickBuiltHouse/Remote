@@ -11,11 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.jokemod.item.TripstudItem;
-import net.mcreator.jokemod.item.StudStrikeItem;
-import net.mcreator.jokemod.item.StudSmasherItem;
-import net.mcreator.jokemod.item.CurdMaceItem;
-import net.mcreator.jokemod.item.BrickWallItem;
+import net.mcreator.jokemod.item.*;
 import net.mcreator.jokemod.JokemodMod;
 
 import java.util.function.Function;
@@ -31,6 +27,7 @@ public class JokemodModItems {
 	public static final DeferredItem<Item> BRICK_WALL_CHESTPLATE;
 	public static final DeferredItem<Item> BRICK_WALL_LEGGINGS;
 	public static final DeferredItem<Item> BRICK_WALL_BOOTS;
+	public static final DeferredItem<Item> RAKE;
 	static {
 		TRIPMINE = block(JokemodModBlocks.TRIPMINE);
 		TRIPSTUD = register("tripstud", TripstudItem::new);
@@ -41,6 +38,7 @@ public class JokemodModItems {
 		BRICK_WALL_CHESTPLATE = register("brick_wall_chestplate", BrickWallItem.Chestplate::new);
 		BRICK_WALL_LEGGINGS = register("brick_wall_leggings", BrickWallItem.Leggings::new);
 		BRICK_WALL_BOOTS = register("brick_wall_boots", BrickWallItem.Boots::new);
+		RAKE = register("rake", RakeItem::new);
 	}
 
 	// Start of user code block custom items

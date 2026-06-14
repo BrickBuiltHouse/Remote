@@ -13,5 +13,9 @@
   "item.jokemod.brick_wall_leggings": "Brick Wall Leg Coverage",
   "advancements.bricked_up.descr": "Construct a piece of armor made of bricks.",
   "advancements.bricked_up.title": "Bricked Up",
-  "effect.jokemod.jump_lock": "Jump Lock"
+  "effect.jokemod.jump_lock": "Jump Lock",
+  "painting.jokemod.drools.title": "The 3 Drools",
+  "painting.jokemod.drools.author": "someone i used to know",
+  "item.jokemod.rake": "Rake",
+  "item.jokemod.rake.description_0": "right click to lunge"
 }

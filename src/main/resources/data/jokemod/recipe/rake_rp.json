@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "b c",
+    "  c"
+  ],
+  "key": {
+    "a": "minecraft:iron_ingot",
+    "b": "minecraft:iron_nugget",
+    "c": "minecraft:stick"
+  },
+  "result": {
+    "id": "jokemod:rake",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "asset_id": "jokemod:drools",
+  "height": 2,
+  "width": 4,
+  "title": {
+    "translate": "painting.jokemod.drools.title"
+  },
+  "author": {
+    "translate": "painting.jokemod.drools.author"
+  }
+}

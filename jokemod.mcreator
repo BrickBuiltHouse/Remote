@@ -496,12 +496,78 @@
           "src/main/java/net/mcreator/jokemod/potion/JumpLockMobEffect.java"
         ]
       }
+    },
+    {
+      "name": "Drools",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "drools",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/painting_variant/drools.json"
+        ]
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "Rake",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rake",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/item/RakeItem.java",
+          "src/main/resources/assets/jokemod/models/item/rake.json",
+          "src/main/resources/assets/jokemod/items/rake.json"
+        ]
+      },
+      "path": "~/rake"
+    },
+    {
+      "name": "RakeRP",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rake_rp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/rake_rp.json",
+          "src/main/resources/data/jokemod/advancement/recipes/rake_rp.json"
+        ]
+      },
+      "path": "~/rake"
+    },
+    {
+      "name": "RakeRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rake_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/RakeRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/rake"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {
     "ITEMS:minecraft:pickaxes": [
+      "~CUSTOM:Rake",
       "~CUSTOM:StudSmasher",
       "~CUSTOM:CurdMace"
     ],
@@ -538,11 +604,16 @@
       "item.jokemod.brick_wall_leggings": "Brick Wall Leg Coverage",
       "advancements.bricked_up.descr": "Construct a piece of armor made of bricks.",
       "advancements.bricked_up.title": "Bricked Up",
-      "effect.jokemod.jump_lock": "Jump Lock"
+      "effect.jokemod.jump_lock": "Jump Lock",
+      "painting.jokemod.drools.title": "The 3 Drools",
+      "painting.jokemod.drools.author": "someone i used to know",
+      "item.jokemod.rake": "Rake",
+      "item.jokemod.rake.description_0": "right click to lunge"
     }
   },
   "metadata": {
     "files": [
+      "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
       "src/main/java/net/mcreator/jokemod/init/JokemodModMobEffects.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModBlocks.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
@@ -568,6 +639,14 @@
       },
       {
         "name": "brick wall",
+        "children": []
+      },
+      {
+        "name": "Paintings",
+        "children": []
+      },
+      {
+        "name": "rake",
         "children": []
       }
     ]
