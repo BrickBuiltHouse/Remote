@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "brickarmor",
+  "category": "equipment",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:brick"
+  },
+  "result": {
+    "id": "jokemod:brick_wall_chestplate",
+    "count": 1
+  }
+}

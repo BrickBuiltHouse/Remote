@@ -3,5 +3,15 @@
   "item.jokemod.tripstud": "Tripstud",
   "item.jokemod.curd_mace": "Curd Mace",
   "item.jokemod.stud_smasher.description_0": "Sets hit enemies on fire, or makes enemies already on fire explode.",
-  "item.jokemod.stud_smasher": "Stud Smasher"
+  "item.jokemod.stud_smasher": "Stud Smasher",
+  "item.jokemod.stud_strike.description_0": "Throws a flare that calls in an airstrike to where it lands.",
+  "item.jokemod.stud_strike": "Stud Strike",
+  "entity.jokemod.trip_flare": "Trip Flare",
+  "item.jokemod.brick_wall_boots": "Brick Wall Feet",
+  "item.jokemod.brick_wall_chestplate": "Brick Wall Chestpiece",
+  "item.jokemod.brick_wall_helmet": "Brick Wall Headpiece",
+  "item.jokemod.brick_wall_leggings": "Brick Wall Leg Coverage",
+  "advancements.bricked_up.descr": "Construct a piece of armor made of bricks.",
+  "advancements.bricked_up.title": "Bricked Up",
+  "effect.jokemod.jump_lock": "Jump Lock"
 }

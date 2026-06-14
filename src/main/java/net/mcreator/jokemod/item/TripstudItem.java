@@ -12,11 +12,12 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 
+import net.mcreator.jokemod.procedures.TripstudDepleteProcedure;
 import net.mcreator.jokemod.entity.TripstudThrownEntity;
 
 public class TripstudItem extends Item {
 	public TripstudItem(Item.Properties properties) {
-		super(properties.durability(1));
+		super(properties);
 	}
 
 	@Override
@@ -36,6 +37,7 @@ public class TripstudItem extends Item {
 			ar = InteractionResult.SUCCESS;
 			entity.startUsingItem(hand);
 		}
+		TripstudDepleteProcedure.execute(entity.getItemInHand(hand));
 		return ar;
 	}
 
@@ -45,7 +47,6 @@ public class TripstudItem extends Item {
 			ItemStack stack = findAmmo(player);
 			if (player.getAbilities().instabuild || stack != ItemStack.EMPTY) {
 				TripstudThrownEntity projectile = TripstudThrownEntity.shoot(world, entity, world.getRandom());
-				itemstack.hurtAndBreak(1, entity, LivingEntity.getSlotForHand(entity.getUsedItemHand()));
 				if (player.getAbilities().instabuild) {
 					projectile.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
 				} else {

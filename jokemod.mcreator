@@ -264,8 +264,8 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/jokemod/items/stud_strike.json",
-          "src/main/java/net/mcreator/jokemod/item/StudStrikeItem.java",
-          "src/main/resources/assets/jokemod/models/item/stud_strike.json"
+          "src/main/resources/assets/jokemod/models/item/stud_strike.json",
+          "src/main/java/net/mcreator/jokemod/item/StudStrikeItem.java"
         ]
       },
       "path": "~/trimpine"
@@ -314,11 +314,188 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/jokemod/entity/TripFlareEntity.java",
-          "src/main/java/net/mcreator/jokemod/client/renderer/TripFlareRenderer.java",
-          "src/main/resources/assets/jokemod/items/trip_flare_spawn_egg.json"
+          "src/main/resources/assets/jokemod/items/trip_flare_spawn_egg.json",
+          "src/main/java/net/mcreator/jokemod/client/renderer/TripFlareRenderer.java"
         ]
       },
       "path": "~/trimpine"
+    },
+    {
+      "name": "BrickWall",
+      "type": "armor",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brick_wall",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/item/BrickWallItem.java",
+          "src/main/resources/assets/jokemod/items/brick_wall_helmet.json",
+          "src/main/resources/assets/jokemod/items/brick_wall_boots.json",
+          "src/main/resources/assets/jokemod/models/item/brick_wall_boots.json",
+          "src/main/resources/assets/jokemod/equipment/brick_wall.json",
+          "src/main/resources/assets/jokemod/models/item/brick_wall_leggings.json",
+          "src/main/java/net/mcreator/jokemod/client/renderer/item/BrickWallArmor.java",
+          "src/main/resources/assets/jokemod/models/item/brick_wall_chestplate.json",
+          "src/main/resources/assets/jokemod/items/brick_wall_chestplate.json",
+          "src/main/resources/assets/jokemod/items/brick_wall_leggings.json",
+          "src/main/resources/assets/jokemod/models/item/brick_wall_helmet.json"
+        ]
+      },
+      "path": "~/brick wall"
+    },
+    {
+      "name": "BrickWallSlowdown",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brick_wall_slowdown",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/BrickWallSlowdownProcedure.java"
+        ]
+      },
+      "path": "~/brick wall"
+    },
+    {
+      "name": "BrickWallJumpPenalty",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brick_wall_jump_penalty",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/BrickWallJumpPenaltyProcedure.java"
+        ]
+      },
+      "path": "~/brick wall"
+    },
+    {
+      "name": "BrickHelmet",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brick_helmet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/brick_helmet.json",
+          "src/main/resources/data/jokemod/advancement/recipes/brick_helmet.json"
+        ]
+      },
+      "path": "~/brick wall"
+    },
+    {
+      "name": "BrickChestplate",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brick_chestplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/advancement/recipes/brick_chestplate.json",
+          "src/main/resources/data/jokemod/recipe/brick_chestplate.json"
+        ]
+      },
+      "path": "~/brick wall"
+    },
+    {
+      "name": "BrickLegs",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brick_legs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/brick_legs.json",
+          "src/main/resources/data/jokemod/advancement/recipes/brick_legs.json"
+        ]
+      },
+      "path": "~/brick wall"
+    },
+    {
+      "name": "BrickFeet",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "brick_feet",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/advancement/recipes/brick_feet.json",
+          "src/main/resources/data/jokemod/recipe/brick_feet.json"
+        ]
+      },
+      "path": "~/brick wall"
+    },
+    {
+      "name": "BrickedUp",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bricked_up",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/advancement/bricked_up.json"
+        ]
+      },
+      "path": "~/brick wall"
+    },
+    {
+      "name": "TripstudDeplete",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tripstud_deplete",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/TripstudDepleteProcedure.java"
+        ]
+      },
+      "path": "~/trimpine"
+    },
+    {
+      "name": "JumpLock",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jump_lock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/potion/JumpLockMobEffect.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -327,6 +504,21 @@
     "ITEMS:minecraft:pickaxes": [
       "~CUSTOM:StudSmasher",
       "~CUSTOM:CurdMace"
+    ],
+    "ITEMS:minecraft:head_armor": [
+      "~CUSTOM:BrickWall.helmet"
+    ],
+    "ITEMS:minecraft:chest_armor": [
+      "~CUSTOM:BrickWall.body"
+    ],
+    "ITEMS:minecraft:leg_armor": [
+      "~CUSTOM:BrickWall.legs"
+    ],
+    "ITEMS:minecraft:foot_armor": [
+      "~CUSTOM:BrickWall.boots"
+    ],
+    "ITEMS:jokemod:brick_wall_repair_items": [
+      "~Items.BRICK"
     ]
   },
   "tab_element_order": {},
@@ -336,13 +528,26 @@
       "item.jokemod.tripstud": "Tripstud",
       "item.jokemod.curd_mace": "Curd Mace",
       "item.jokemod.stud_smasher.description_0": "Sets hit enemies on fire, or makes enemies already on fire explode.",
-      "item.jokemod.stud_smasher": "Stud Smasher"
+      "item.jokemod.stud_smasher": "Stud Smasher",
+      "item.jokemod.stud_strike.description_0": "Throws a flare that calls in an airstrike to where it lands.",
+      "item.jokemod.stud_strike": "Stud Strike",
+      "entity.jokemod.trip_flare": "Trip Flare",
+      "item.jokemod.brick_wall_boots": "Brick Wall Feet",
+      "item.jokemod.brick_wall_chestplate": "Brick Wall Chestpiece",
+      "item.jokemod.brick_wall_helmet": "Brick Wall Headpiece",
+      "item.jokemod.brick_wall_leggings": "Brick Wall Leg Coverage",
+      "advancements.bricked_up.descr": "Construct a piece of armor made of bricks.",
+      "advancements.bricked_up.title": "Bricked Up",
+      "effect.jokemod.jump_lock": "Jump Lock"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/jokemod/init/JokemodModMobEffects.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModBlocks.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModEntityRenderers.java",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModEntities.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
       "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
@@ -359,6 +564,10 @@
       },
       {
         "name": "trimpine",
+        "children": []
+      },
+      {
+        "name": "brick wall",
         "children": []
       }
     ]

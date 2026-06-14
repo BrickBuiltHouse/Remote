@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "jokemod:brick_wall"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "jokemod:brick_wall"
+      }
+    ]
+  }
+}

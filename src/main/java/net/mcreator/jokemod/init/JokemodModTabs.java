@@ -28,6 +28,10 @@ public class JokemodModTabs {
 			tabData.accept(JokemodModItems.CURD_MACE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(JokemodModItems.STUD_SMASHER.get());
+			tabData.accept(JokemodModItems.BRICK_WALL_HELMET.get());
+			tabData.accept(JokemodModItems.BRICK_WALL_CHESTPLATE.get());
+			tabData.accept(JokemodModItems.BRICK_WALL_LEGGINGS.get());
+			tabData.accept(JokemodModItems.BRICK_WALL_BOOTS.get());
 		}
 	}
 }

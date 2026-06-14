@@ -20,7 +20,7 @@
     "enchantability": 0,
     "useDuration": 1,
     "toolType": 1.0,
-    "damageCount": 1,
+    "damageCount": 0,
     "recipeRemainder": {
       "value": ""
     },
@@ -39,6 +39,9 @@
     },
     "inventorySize": 9,
     "inventoryStackSize": 99,
+    "onRightClickedInAir": {
+      "name": "TripstudDeplete"
+    },
     "enableRanged": true,
     "shootConstantly": true,
     "rangedItemChargesPower": false,

@@ -15,6 +15,7 @@ import net.mcreator.jokemod.item.TripstudItem;
 import net.mcreator.jokemod.item.StudStrikeItem;
 import net.mcreator.jokemod.item.StudSmasherItem;
 import net.mcreator.jokemod.item.CurdMaceItem;
+import net.mcreator.jokemod.item.BrickWallItem;
 import net.mcreator.jokemod.JokemodMod;
 
 import java.util.function.Function;
@@ -26,12 +27,20 @@ public class JokemodModItems {
 	public static final DeferredItem<Item> CURD_MACE;
 	public static final DeferredItem<Item> STUD_SMASHER;
 	public static final DeferredItem<Item> STUD_STRIKE;
+	public static final DeferredItem<Item> BRICK_WALL_HELMET;
+	public static final DeferredItem<Item> BRICK_WALL_CHESTPLATE;
+	public static final DeferredItem<Item> BRICK_WALL_LEGGINGS;
+	public static final DeferredItem<Item> BRICK_WALL_BOOTS;
 	static {
 		TRIPMINE = block(JokemodModBlocks.TRIPMINE);
 		TRIPSTUD = register("tripstud", TripstudItem::new);
 		CURD_MACE = register("curd_mace", CurdMaceItem::new);
 		STUD_SMASHER = register("stud_smasher", StudSmasherItem::new);
 		STUD_STRIKE = register("stud_strike", StudStrikeItem::new);
+		BRICK_WALL_HELMET = register("brick_wall_helmet", BrickWallItem.Helmet::new);
+		BRICK_WALL_CHESTPLATE = register("brick_wall_chestplate", BrickWallItem.Chestplate::new);
+		BRICK_WALL_LEGGINGS = register("brick_wall_leggings", BrickWallItem.Leggings::new);
+		BRICK_WALL_BOOTS = register("brick_wall_boots", BrickWallItem.Boots::new);
 	}
 
 	// Start of user code block custom items

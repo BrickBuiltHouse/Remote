@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "brickarmor",
+  "category": "equipment",
+  "pattern": [
+    "aaa",
+    "a a"
+  ],
+  "key": {
+    "a": "minecraft:brick"
+  },
+  "result": {
+    "id": "jokemod:brick_wall_helmet",
+    "count": 1
+  }
+}

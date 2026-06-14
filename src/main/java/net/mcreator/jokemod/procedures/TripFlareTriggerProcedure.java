@@ -1,6 +1,16 @@
 package net.mcreator.jokemod.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
+import net.minecraft.server.level.ServerLevel;
+
+import net.mcreator.jokemod.init.JokemodModEntities;
+import net.mcreator.jokemod.entity.TripstudThrownEntity;
+import net.mcreator.jokemod.JokemodMod;
 
 public class TripFlareTriggerProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -9,7 +19,7 @@ public class TripFlareTriggerProcedure {
 		JokemodMod.queueServerWork(80, () -> {
 			for (int index0 = 0; index0 < 16; index0++) {
 				if (world instanceof ServerLevel projectileLevel) {
-					Projectile _entityToSpawn = initArrowProjectile(new TripstudThrownEntity(JokemodModEntities.DELETED_MOD_ELEMENT.get(), projectileLevel), null, 0, true, false, false, AbstractArrow.Pickup.DISALLOWED);
+					Projectile _entityToSpawn = initArrowProjectile(new TripstudThrownEntity(JokemodModEntities.TRIPSTUD_THROWN.get(), projectileLevel), null, 0, true, false, false, AbstractArrow.Pickup.DISALLOWED);
 					_entityToSpawn.setPos((entity.getX() + Mth.nextDouble(RandomSource.create(), -10, 10)), (entity.getY() + 40), (entity.getZ() + Mth.nextDouble(RandomSource.create(), -10, 10)));
 					_entityToSpawn.shoot(0, (-1), 0, 3, 0);
 					projectileLevel.addFreshEntity(_entityToSpawn);
