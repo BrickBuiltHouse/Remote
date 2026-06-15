@@ -9,7 +9,7 @@
       "falpha": 0.0
     },
     "particle": {
-      "value": "DRIPPING_DRIPSTONE_LAVA"
+      "value": "CUSTOM:BleedingEffect"
     },
     "onAddedSound": {
       "value": ""

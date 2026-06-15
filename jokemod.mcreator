@@ -828,6 +828,201 @@
         ]
       },
       "path": "~/Paintings"
+    },
+    {
+      "name": "SpongeYell",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sponge_yell",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/painting_variant/sponge_yell.json"
+        ]
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "BleedingEffect",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bleeding_effect",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/particles/bleeding_effect.json",
+          "src/main/java/net/mcreator/jokemod/client/particle/BleedingEffectParticle.java"
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "SurpriseJuiceDrank",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "surprise_juice_drank",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/SurpriseJuiceDrankProcedure.java"
+        ]
+      },
+      "path": "~/SurpriseLiquid"
+    },
+    {
+      "name": "SurpriseJuice",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "surprise_juice",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/surprise_juice.json",
+          "src/main/java/net/mcreator/jokemod/item/SurpriseJuiceItem.java",
+          "src/main/resources/assets/jokemod/items/surprise_juice.json"
+        ]
+      },
+      "path": "~/SurpriseLiquid"
+    },
+    {
+      "name": "SurpriseJuiceRP",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "surprise_juice_rp",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/surprise_juice_rp.json",
+          "src/main/resources/data/jokemod/advancement/recipes/surprise_juice_rp.json"
+        ]
+      },
+      "path": "~/SurpriseLiquid"
+    },
+    {
+      "name": "MoreJuice",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "more_juice",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/advancement/more_juice.json"
+        ]
+      },
+      "path": "~/SurpriseLiquid"
+    },
+    {
+      "name": "BloodGusherLT",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_gusher_lt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/loot_table/entities/blood_gusher.json"
+        ]
+      },
+      "path": "~/British glory"
+    },
+    {
+      "name": "TheBloodedge",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_bloodedge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/item/TheBloodedgeItem.java",
+          "src/main/resources/assets/jokemod/models/item/the_bloodedge.json",
+          "src/main/resources/assets/jokemod/items/the_bloodedge.json"
+        ]
+      },
+      "path": "~/Bloodedge"
+    },
+    {
+      "name": "BloodedgeKill",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodedge_kill",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/BloodedgeKillProcedure.java"
+        ]
+      },
+      "path": "~/Bloodedge"
+    },
+    {
+      "name": "BloodedgeBloodSlice",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bloodedge_blood_slice",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/BloodedgeBloodSliceProcedure.java"
+        ]
+      },
+      "path": "~/Bloodedge"
+    },
+    {
+      "name": "Wobbler",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wobbler",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/wobbler_spawn_egg.json",
+          "src/main/resources/assets/jokemod/items/wobbler_spawn_egg.json",
+          "src/main/java/net/mcreator/jokemod/entity/WobblerEntity.java",
+          "src/main/resources/data/jokemod/neoforge/biome_modifier/wobbler_biome_modifier.json",
+          "src/main/java/net/mcreator/jokemod/client/renderer/WobblerRenderer.java"
+        ]
+      },
+      "path": "~/Wobbler"
     }
   ],
   "variable_elements": [],
@@ -853,6 +1048,16 @@
     ],
     "ITEMS:minecraft:enchantable/durability": [
       "~CUSTOM:TheKnife"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:TheBloodedge"
+    ],
+    "ITEMS:jokemod:the_bloodedge_repair_items": [
+      "~Blocks.PIGLIN_HEAD",
+      "~Blocks.SKULL#5",
+      "~Blocks.SKULL#4",
+      "~Blocks.SKULL#3",
+      "~Blocks.SKULL#2"
     ]
   },
   "tab_element_order": {},
@@ -872,8 +1077,8 @@
       "advancements.bricked_up.descr": "Construct a piece of armor made of bricks.",
       "advancements.bricked_up.title": "Bricked Up",
       "effect.jokemod.jump_lock": "Jump Lock",
-      "painting.jokemod.drools.title": "The 3 Drools",
-      "painting.jokemod.drools.author": "someone i used to know",
+      "painting.jokemod.drools.title": "§eThe 3 Drools",
+      "painting.jokemod.drools.author": "§7Unknown",
       "item.jokemod.rake": "Rake",
       "item.jokemod.rake.description_0": "right click to lunge",
       "item.jokemod.curd_mace": "Curd Mace",
@@ -886,14 +1091,26 @@
       "item.jokemod.blood_gusher_spawn_egg": "Blood Gusher Spawn Egg",
       "entity.jokemod.blood_gusher": "Blood Gusher",
       "painting.jokemod.iamgreen.title": "§eI AM GREEN",
-      "painting.jokemod.iamgreen.author": "§8???",
+      "painting.jokemod.iamgreen.author": "§7Unknown",
       "painting.jokemod.steve_dribble.title": "§eSteve Dribble",
-      "painting.jokemod.steve_dribble.author": "§7Classy Chair"
+      "painting.jokemod.steve_dribble.author": "§7Classy Chair",
+      "painting.jokemod.sponge_yell.title": "§eSponge Yell",
+      "painting.jokemod.sponge_yell.author": "§7Unknown",
+      "item.jokemod.surprise_juice.description_0": "the red label means its good stuff",
+      "item.jokemod.surprise_juice": "Surprise Juice",
+      "advancements.more_juice.descr": "drink 20 surprise juice bottles total (will add l8r)",
+      "advancements.more_juice.title": "MORE JUICE NOW!!!!!!!!",
+      "item.jokemod.the_bloodedge": "The Bloodedge",
+      "item.jokemod.the_bloodedge.description_0": "meh... *listens to music*",
+      "entity.jokemod.wobbler": "Wobbler",
+      "item.jokemod.wobbler_spawn_egg": "Wobbler Spawn Egg"
     }
   },
   "metadata": {
     "files": [
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModParticleTypes.java",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModParticles.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModMobEffects.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModBlocks.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
@@ -901,6 +1118,7 @@
       "src/main/java/net/mcreator/jokemod/init/JokemodModEntities.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModModels.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
       "src/main/java/net/mcreator/jokemod/JokemodMod.java",
       "src/main/resources/META-INF/accesstransformer.cfg"
@@ -943,6 +1161,18 @@
       },
       {
         "name": "Effects",
+        "children": []
+      },
+      {
+        "name": "SurpriseLiquid",
+        "children": []
+      },
+      {
+        "name": "Bloodedge",
+        "children": []
+      },
+      {
+        "name": "Wobbler",
         "children": []
       }
     ]

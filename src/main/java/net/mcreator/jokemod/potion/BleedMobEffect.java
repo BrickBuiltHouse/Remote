@@ -7,14 +7,15 @@ import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.particles.SimpleParticleType;
 
 import net.mcreator.jokemod.procedures.BleedUsDryProcedure;
+import net.mcreator.jokemod.init.JokemodModParticleTypes;
 import net.mcreator.jokemod.JokemodMod;
 
 public class BleedMobEffect extends MobEffect {
 	public BleedMobEffect() {
-		super(MobEffectCategory.HARMFUL, -65536, mobEffectInstance -> ParticleTypes.DRIPPING_DRIPSTONE_LAVA);
+		super(MobEffectCategory.HARMFUL, -65536, mobEffectInstance -> (SimpleParticleType) (JokemodModParticleTypes.BLEEDING_EFFECT.get()));
 		this.addAttributeModifier(Attributes.ARMOR, ResourceLocation.fromNamespaceAndPath(JokemodMod.MODID, "effect.bleed_0"), -1, AttributeModifier.Operation.ADD_VALUE);
 	}
 

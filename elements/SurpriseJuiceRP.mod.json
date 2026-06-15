@@ -1,0 +1,53 @@
+{
+  "_fv": 79,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 3,
+    "group": "",
+    "unlockingItems": [
+      {
+        "value": "CUSTOM:Tripstud"
+      }
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.ROTTEN_FLESH"
+      },
+      {
+        "value": "Items.ROTTEN_FLESH"
+      },
+      {
+        "value": "Items.ROTTEN_FLESH"
+      },
+      {
+        "value": "Items.ROTTEN_FLESH"
+      },
+      {
+        "value": "CUSTOM:Tripstud"
+      },
+      {
+        "value": "Items.REEDS"
+      },
+      {
+        "value": "Items.ROTTEN_FLESH"
+      },
+      {
+        "value": "Items.REEDS"
+      },
+      {
+        "value": "Items.REEDS"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SurpriseJuice"
+    },
+    "name": "surprise_juice_rp",
+    "namespace": "mod"
+  }
+}

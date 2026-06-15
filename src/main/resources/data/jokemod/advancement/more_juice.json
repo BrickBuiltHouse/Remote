@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "jokemod:surprise_juice"
+    },
+    "title": {
+      "translate": "advancements.more_juice.title"
+    },
+    "description": {
+      "translate": "advancements.more_juice.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "more_juice_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "jokemod:surprise_juice"
+          ]
+        }
+      }
+    }
+  },
+  "parent": "minecraft:husbandry/plant_seed"
+}

@@ -32,16 +32,19 @@ public class JokemodModTabs {
 			tabData.accept(JokemodModItems.BRICK_WALL_BOOTS.get());
 			tabData.accept(JokemodModItems.CURD_MACE.get());
 			tabData.accept(JokemodModItems.THE_KNIFE.get());
+			tabData.accept(JokemodModItems.THE_BLOODEDGE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(JokemodModItems.RAKE.get());
 			tabData.accept(JokemodModItems.METAL_BAT.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(JokemodModItems.CURD.get());
 			tabData.accept(JokemodModItems.STEROID.get());
+			tabData.accept(JokemodModItems.SURPRISE_JUICE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(JokemodModBlocks.CURD_BLOCK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(JokemodModItems.BLOOD_GUSHER_SPAWN_EGG.get());
+			tabData.accept(JokemodModItems.WOBBLER_SPAWN_EGG.get());
 		}
 	}
 }
