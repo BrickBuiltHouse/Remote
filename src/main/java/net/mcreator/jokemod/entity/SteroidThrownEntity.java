@@ -81,7 +81,7 @@ public class SteroidThrownEntity extends AbstractArrow implements ItemSupplier {
 			cloud.setRadiusOnUse(-0.25F);
 			cloud.setRadiusPerTick(-0.0025F);
 
-			cloud.addEffect(new MobEffectInstance(JokemodModMobEffects.ROID_RAGE, 200, 0));
+			cloud.addEffect(new MobEffectInstance(JokemodModMobEffects.ROID_RAGE, 120, 0));
 
 			this.level().addFreshEntity(cloud);
 			this.discard();

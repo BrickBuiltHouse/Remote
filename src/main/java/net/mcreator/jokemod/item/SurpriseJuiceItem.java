@@ -1,19 +1,5 @@
 package net.mcreator.jokemod.item;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.component.TooltipDisplay;
-import net.minecraft.world.item.component.Consumables;
-import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.network.chat.Component;
-
-import net.mcreator.jokemod.procedures.SurpriseJuiceDrankProcedure;
-
-import java.util.function.Consumer;
-
 public class SurpriseJuiceItem extends Item {
 	public SurpriseJuiceItem(Item.Properties properties) {
 		super(properties.stacksTo(8).food((new FoodProperties.Builder()).nutrition(0).saturationModifier(0f).alwaysEdible().build(), Consumables.defaultDrink().consumeSeconds(0.5F).build()));

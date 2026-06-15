@@ -830,31 +830,18 @@
       "path": "~/Paintings"
     },
     {
-      "name": "SpongeYell",
-      "type": "painting",
+      "name": "SurpriseJuiceRP",
+      "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sponge_yell",
+      "registry_name": "surprise_juice_rp",
       "metadata": {
         "files": [
-          "src/main/resources/data/jokemod/painting_variant/sponge_yell.json"
+          "src/main/resources/data/jokemod/recipe/surprise_juice_rp.json",
+          "src/main/resources/data/jokemod/advancement/recipes/surprise_juice_rp.json"
         ]
       },
-      "path": "~/Paintings"
-    },
-    {
-      "name": "BleedingEffect",
-      "type": "particle",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bleeding_effect",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jokemod/particles/bleeding_effect.json",
-          "src/main/java/net/mcreator/jokemod/client/particle/BleedingEffectParticle.java"
-        ]
-      },
-      "path": "~/Effects"
+      "path": "~/SurpriseLiquid"
     },
     {
       "name": "SurpriseJuiceDrank",
@@ -892,76 +879,6 @@
       "path": "~/SurpriseLiquid"
     },
     {
-      "name": "SurpriseJuice",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "surprise_juice",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/jokemod/models/item/surprise_juice.json",
-          "src/main/java/net/mcreator/jokemod/item/SurpriseJuiceItem.java",
-          "src/main/resources/assets/jokemod/items/surprise_juice.json"
-        ]
-      },
-      "path": "~/SurpriseLiquid"
-    },
-    {
-      "name": "SurpriseJuiceRP",
-      "type": "recipe",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "surprise_juice_rp",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jokemod/recipe/surprise_juice_rp.json",
-          "src/main/resources/data/jokemod/advancement/recipes/surprise_juice_rp.json"
-        ]
-      },
-      "path": "~/SurpriseLiquid"
-    },
-    {
-      "name": "MoreJuice",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "more_juice",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jokemod/advancement/more_juice.json"
-        ]
-      },
-      "path": "~/SurpriseLiquid"
-    },
-    {
-      "name": "BloodGusherLT",
-      "type": "loottable",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blood_gusher_lt",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/jokemod/loot_table/entities/blood_gusher.json"
-        ]
-      },
-      "path": "~/British glory"
-    },
-    {
-      "name": "TheBloodedge",
-      "type": "tool",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "the_bloodedge",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/jokemod/item/TheBloodedgeItem.java",
-          "src/main/resources/assets/jokemod/models/item/the_bloodedge.json",
-          "src/main/resources/assets/jokemod/items/the_bloodedge.json"
-        ]
-      },
-      "path": "~/Bloodedge"
-    },
-    {
       "name": "BloodedgeKill",
       "type": "procedure",
       "compiles": true,
@@ -979,6 +896,77 @@
         ]
       },
       "path": "~/Bloodedge"
+    },
+    {
+      "name": "TheBloodedge",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_bloodedge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/item/TheBloodedgeItem.java",
+          "src/main/resources/assets/jokemod/models/item/the_bloodedge.json",
+          "src/main/resources/assets/jokemod/items/the_bloodedge.json"
+        ]
+      },
+      "path": "~/Bloodedge"
+    },
+    {
+      "name": "SpongeYell",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sponge_yell",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/painting_variant/sponge_yell.json"
+        ]
+      },
+      "path": "~/Paintings"
+    },
+    {
+      "name": "MoreJuice",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "more_juice",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/advancement/more_juice.json"
+        ]
+      },
+      "path": "~/SurpriseLiquid"
+    },
+    {
+      "name": "Wobbler",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wobbler",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/wobbler_spawn_egg.json",
+          "src/main/resources/assets/jokemod/items/wobbler_spawn_egg.json",
+          "src/main/java/net/mcreator/jokemod/entity/WobblerEntity.java",
+          "src/main/resources/data/jokemod/neoforge/biome_modifier/wobbler_biome_modifier.json",
+          "src/main/java/net/mcreator/jokemod/client/renderer/WobblerRenderer.java"
+        ]
+      },
+      "path": "~/Wobbler"
+    },
+    {
+      "name": "BloodGusherLT",
+      "type": "loottable",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blood_gusher_lt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/loot_table/entities/blood_gusher.json"
+        ]
+      },
+      "path": "~/British glory"
     },
     {
       "name": "BloodedgeBloodSlice",
@@ -1008,21 +996,255 @@
       "path": "~/Bloodedge"
     },
     {
-      "name": "Wobbler",
-      "type": "livingentity",
+      "name": "BleedingEffect",
+      "type": "particle",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "wobbler",
+      "registry_name": "bleeding_effect",
       "metadata": {
         "files": [
-          "src/main/resources/assets/jokemod/models/item/wobbler_spawn_egg.json",
-          "src/main/resources/assets/jokemod/items/wobbler_spawn_egg.json",
-          "src/main/java/net/mcreator/jokemod/entity/WobblerEntity.java",
-          "src/main/resources/data/jokemod/neoforge/biome_modifier/wobbler_biome_modifier.json",
-          "src/main/java/net/mcreator/jokemod/client/renderer/WobblerRenderer.java"
+          "src/main/resources/assets/jokemod/particles/bleeding_effect.json",
+          "src/main/java/net/mcreator/jokemod/client/particle/BleedingEffectParticle.java"
         ]
       },
-      "path": "~/Wobbler"
+      "path": "~/Effects"
+    },
+    {
+      "name": "SurpriseJuice",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "surprise_juice",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/surprise_juice.json",
+          "src/main/java/net/mcreator/jokemod/item/SurpriseJuiceItem.java",
+          "src/main/resources/assets/jokemod/items/surprise_juice.json"
+        ]
+      },
+      "path": "~/SurpriseLiquid"
+    },
+    {
+      "name": "RoidRageEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roid_rage_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/RoidRageEffectExpiresProcedure.java"
+        ]
+      },
+      "path": "~/Steroid"
+    },
+    {
+      "name": "SaltBlockFromSaltCrystalRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_block_from_salt_crystal_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/salt_block_from_salt_crystal_recepie.json"
+        ]
+      },
+      "path": "~/Salt/Recepies"
+    },
+    {
+      "name": "SmellingSaltEffectEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelling_salt_effect_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/SmellingSaltEffectEffectExpiresProcedure.java"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "MetalBatRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "metal_bat_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/metal_bat_recepie.json"
+        ]
+      },
+      "path": "~/MetalBat"
+    },
+    {
+      "name": "SaltCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/items/salt_crystal.json",
+          "src/main/resources/assets/jokemod/models/item/salt_crystal.json",
+          "src/main/java/net/mcreator/jokemod/item/SaltCrystalItem.java"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "SmellingSalt",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelling_salt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/smelling_salt.json",
+          "src/main/resources/assets/jokemod/items/smelling_salt.json",
+          "src/main/java/net/mcreator/jokemod/item/SmellingSaltItem.java"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "Salt",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/salt.json",
+          "src/main/resources/assets/jokemod/items/salt.json",
+          "src/main/java/net/mcreator/jokemod/item/SaltItem.java"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "SteroidRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "steroid_recepie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/recipe/brewing/SteroidRecepieBrewingRecipe.java"
+        ]
+      },
+      "path": "~/Steroid"
+    },
+    {
+      "name": "SaltBlockFromSaltRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_block_from_salt_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/salt_block_from_salt_recepie.json"
+        ]
+      },
+      "path": "~/Salt/Recepies"
+    },
+    {
+      "name": "SmellingSaltPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelling_salt_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/SmellingSaltPlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "SaltRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/salt_recepie.json"
+        ]
+      },
+      "path": "~/Salt/Recepies"
+    },
+    {
+      "name": "SmellingSaltRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelling_salt_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/smelling_salt_recepie.json"
+        ]
+      },
+      "path": "~/Salt/Recepies"
+    },
+    {
+      "name": "SaltBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/block/SaltBlockBlock.java",
+          "src/main/resources/data/jokemod/worldgen/configured_feature/salt_block.json",
+          "src/main/resources/data/jokemod/loot_table/blocks/salt_block.json",
+          "src/main/resources/assets/jokemod/blockstates/salt_block.json",
+          "src/main/resources/assets/jokemod/items/salt_block.json",
+          "src/main/resources/assets/jokemod/models/block/salt_block.json",
+          "src/main/resources/data/jokemod/worldgen/placed_feature/salt_block.json",
+          "src/main/resources/data/jokemod/neoforge/biome_modifier/salt_block_biome_modifier.json",
+          "src/main/resources/assets/jokemod/models/item/salt_block.json"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "SmellingSaltEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelling_salt_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/potion/SmellingSaltEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Salt"
     }
   ],
   "variable_elements": [],
@@ -1058,6 +1280,12 @@
       "~Blocks.SKULL#4",
       "~Blocks.SKULL#3",
       "~Blocks.SKULL#2"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:SaltBlock"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:SaltBlock"
     ]
   },
   "tab_element_order": {},
@@ -1077,8 +1305,8 @@
       "advancements.bricked_up.descr": "Construct a piece of armor made of bricks.",
       "advancements.bricked_up.title": "Bricked Up",
       "effect.jokemod.jump_lock": "Jump Lock",
-      "painting.jokemod.drools.title": "§eThe 3 Drools",
-      "painting.jokemod.drools.author": "§7Unknown",
+      "painting.jokemod.drools.title": "The 3 Drools",
+      "painting.jokemod.drools.author": "someone i used to know",
       "item.jokemod.rake": "Rake",
       "item.jokemod.rake.description_0": "right click to lunge",
       "item.jokemod.curd_mace": "Curd Mace",
@@ -1091,26 +1319,14 @@
       "item.jokemod.blood_gusher_spawn_egg": "Blood Gusher Spawn Egg",
       "entity.jokemod.blood_gusher": "Blood Gusher",
       "painting.jokemod.iamgreen.title": "§eI AM GREEN",
-      "painting.jokemod.iamgreen.author": "§7Unknown",
+      "painting.jokemod.iamgreen.author": "§8???",
       "painting.jokemod.steve_dribble.title": "§eSteve Dribble",
-      "painting.jokemod.steve_dribble.author": "§7Classy Chair",
-      "painting.jokemod.sponge_yell.title": "§eSponge Yell",
-      "painting.jokemod.sponge_yell.author": "§7Unknown",
-      "item.jokemod.surprise_juice.description_0": "the red label means its good stuff",
-      "item.jokemod.surprise_juice": "Surprise Juice",
-      "advancements.more_juice.descr": "drink 20 surprise juice bottles total (will add l8r)",
-      "advancements.more_juice.title": "MORE JUICE NOW!!!!!!!!",
-      "item.jokemod.the_bloodedge": "The Bloodedge",
-      "item.jokemod.the_bloodedge.description_0": "meh... *listens to music*",
-      "entity.jokemod.wobbler": "Wobbler",
-      "item.jokemod.wobbler_spawn_egg": "Wobbler Spawn Egg"
+      "painting.jokemod.steve_dribble.author": "§7Classy Chair"
     }
   },
   "metadata": {
     "files": [
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
-      "src/main/java/net/mcreator/jokemod/init/JokemodModParticleTypes.java",
-      "src/main/java/net/mcreator/jokemod/init/JokemodModParticles.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModMobEffects.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModBlocks.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
@@ -1118,7 +1334,6 @@
       "src/main/java/net/mcreator/jokemod/init/JokemodModEntities.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/jokemod/init/JokemodModModels.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
       "src/main/java/net/mcreator/jokemod/JokemodMod.java",
       "src/main/resources/META-INF/accesstransformer.cfg"
@@ -1128,16 +1343,25 @@
     "name": "~",
     "children": [
       {
-        "name": "brick wall",
+        "name": "SurpriseLiquid",
         "children": []
       },
       {
-        "name": "rake",
+        "name": "brick wall",
         "children": []
       },
       {
         "name": "trimpine",
         "children": []
+      },
+      {
+        "name": "Salt",
+        "children": [
+          {
+            "name": "Recepies",
+            "children": []
+          }
+        ]
       },
       {
         "name": "Paintings",
@@ -1156,15 +1380,11 @@
         "children": []
       },
       {
-        "name": "MetalBat",
+        "name": "Wobbler",
         "children": []
       },
       {
-        "name": "Effects",
-        "children": []
-      },
-      {
-        "name": "SurpriseLiquid",
+        "name": "rake",
         "children": []
       },
       {
@@ -1172,7 +1392,11 @@
         "children": []
       },
       {
-        "name": "Wobbler",
+        "name": "MetalBat",
+        "children": []
+      },
+      {
+        "name": "Effects",
         "children": []
       }
     ]

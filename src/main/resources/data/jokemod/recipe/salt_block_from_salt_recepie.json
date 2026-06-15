@@ -3,16 +3,14 @@
   "category": "misc",
   "pattern": [
     "aaa",
-    "abc",
-    "acc"
+    "aaa",
+    "aaa"
   ],
   "key": {
-    "a": "minecraft:rotten_flesh",
-    "b": "jokemod:tripstud",
-    "c": "minecraft:sugar_cane"
+    "a": "jokemod:salt"
   },
   "result": {
     "id": "jokemod:deleted_mod_element",
-    "count": 3
+    "count": 1
   }
 }

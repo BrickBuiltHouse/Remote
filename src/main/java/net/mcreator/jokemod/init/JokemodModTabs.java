@@ -22,8 +22,11 @@ public class JokemodModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
 			tabData.accept(JokemodModBlocks.TRIPMINE.get().asItem());
+			tabData.accept(JokemodModBlocks.SALT_BLOCK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(JokemodModItems.TRIPSTUD.get());
+			tabData.accept(JokemodModItems.SALT_CRYSTAL.get());
+			tabData.accept(JokemodModItems.SALT.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(JokemodModItems.STUD_SMASHER.get());
 			tabData.accept(JokemodModItems.BRICK_WALL_HELMET.get());
@@ -40,8 +43,10 @@ public class JokemodModTabs {
 			tabData.accept(JokemodModItems.CURD.get());
 			tabData.accept(JokemodModItems.STEROID.get());
 			tabData.accept(JokemodModItems.SURPRISE_JUICE.get());
+			tabData.accept(JokemodModItems.SMELLING_SALT.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(JokemodModBlocks.CURD_BLOCK.get().asItem());
+			tabData.accept(JokemodModBlocks.SALT_BLOCK.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(JokemodModItems.BLOOD_GUSHER_SPAWN_EGG.get());
 			tabData.accept(JokemodModItems.WOBBLER_SPAWN_EGG.get());

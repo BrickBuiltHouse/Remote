@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft:block/powder_snow",
+    "up": "minecraft:block/powder_snow",
+    "north": "minecraft:block/powder_snow",
+    "east": "minecraft:block/powder_snow",
+    "south": "minecraft:block/powder_snow",
+    "west": "minecraft:block/powder_snow",
+    "particle": "minecraft:block/powder_snow"
+  },
+  "render_type": "solid"
+}

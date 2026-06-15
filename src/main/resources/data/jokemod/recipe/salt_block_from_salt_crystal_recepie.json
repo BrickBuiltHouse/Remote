@@ -2,17 +2,14 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "aaa",
-    "abc",
-    "acc"
+    "aa",
+    "aa"
   ],
   "key": {
-    "a": "minecraft:rotten_flesh",
-    "b": "jokemod:tripstud",
-    "c": "minecraft:sugar_cane"
+    "a": "jokemod:deleted_mod_element"
   },
   "result": {
     "id": "jokemod:deleted_mod_element",
-    "count": 3
+    "count": 1
   }
 }
