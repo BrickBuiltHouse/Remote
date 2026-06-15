@@ -854,6 +854,202 @@
         ]
       },
       "path": "~/Paintings"
+    },
+    {
+      "name": "Salt",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/items/salt.json",
+          "src/main/java/net/mcreator/jokemod/item/SaltItem.java",
+          "src/main/resources/assets/jokemod/models/item/salt.json"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "SmellingSalt",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelling_salt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/smelling_salt.json",
+          "src/main/java/net/mcreator/jokemod/item/SmellingSaltItem.java",
+          "src/main/resources/assets/jokemod/items/smelling_salt.json"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "SmellingSaltRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelling_salt_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/smelling_salt_recepie.json"
+        ]
+      },
+      "path": "~/Salt/Recepies"
+    },
+    {
+      "name": "SaltBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/blockstates/salt_block.json",
+          "src/main/resources/data/jokemod/worldgen/placed_feature/salt_block.json",
+          "src/main/resources/assets/jokemod/models/item/salt_block.json",
+          "src/main/resources/data/jokemod/neoforge/biome_modifier/salt_block_biome_modifier.json",
+          "src/main/resources/assets/jokemod/items/salt_block.json",
+          "src/main/java/net/mcreator/jokemod/block/SaltBlockBlock.java",
+          "src/main/resources/data/jokemod/loot_table/blocks/salt_block.json",
+          "src/main/resources/assets/jokemod/models/block/salt_block.json",
+          "src/main/resources/data/jokemod/worldgen/configured_feature/salt_block.json"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "SaltCrystal",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_crystal",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/salt_crystal.json",
+          "src/main/resources/assets/jokemod/items/salt_crystal.json",
+          "src/main/java/net/mcreator/jokemod/item/SaltCrystalItem.java"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "SaltBlockFromSaltRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_block_from_salt_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/salt_block_from_salt_recepie.json"
+        ]
+      },
+      "path": "~/Salt/Recepies"
+    },
+    {
+      "name": "SaltRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/salt_recepie.json"
+        ]
+      },
+      "path": "~/Salt/Recepies"
+    },
+    {
+      "name": "SaltBlockFromSaltCrystalRecepie",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "salt_block_from_salt_crystal_recepie",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/jokemod/recipe/salt_block_from_salt_crystal_recepie.json"
+        ]
+      },
+      "path": "~/Salt/Recepies"
+    },
+    {
+      "name": "RoidRageEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "roid_rage_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/RoidRageEffectExpiresProcedure.java"
+        ]
+      },
+      "path": "~/Steroid"
+    },
+    {
+      "name": "SmellingSaltEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelling_salt_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/potion/SmellingSaltEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "SmellingSaltEffectEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelling_salt_effect_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/SmellingSaltEffectEffectExpiresProcedure.java"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "SmellingSaltPlayerFinishesUsingItem",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelling_salt_player_finishes_using_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/SmellingSaltPlayerFinishesUsingItemProcedure.java"
+        ]
+      },
+      "path": "~/Salt"
     }
   ],
   "variable_elements": [],
@@ -877,7 +1073,12 @@
     "ITEMS:jokemod:brick_wall_repair_items": [
       "~Items.BRICK"
     ],
-    "ITEMS:minecraft:enchantable/durability": []
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:SaltBlock"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:SaltBlock"
+    ]
   },
   "tab_element_order": {},
   "language_map": {
@@ -912,7 +1113,12 @@
       "painting.jokemod.iamgreen.title": "§eI AM GREEN",
       "painting.jokemod.iamgreen.author": "§8???",
       "painting.jokemod.steve_dribble.title": "§eSteve Dribble",
-      "painting.jokemod.steve_dribble.author": "§7Classy Chair"
+      "painting.jokemod.steve_dribble.author": "§7Classy Chair",
+      "item.jokemod.salt": "Salt",
+      "item.jokemod.smelling_salt": "Smelling Salt",
+      "item.jokemod.salt_block": "Salt Block",
+      "item.jokemod.salt_crystal": "Salt Crystal",
+      "effect.jokemod.smelling_salt_effect": "Smelling Salt Effect"
     }
   },
   "metadata": {
@@ -968,6 +1174,15 @@
       {
         "name": "Effects",
         "children": []
+      },
+      {
+        "name": "Salt",
+        "children": [
+          {
+            "name": "Recepies",
+            "children": []
+          }
+        ]
       }
     ]
   },

@@ -29,5 +29,10 @@
   "painting.jokemod.iamgreen.title": "§eI AM GREEN",
   "painting.jokemod.iamgreen.author": "§8???",
   "painting.jokemod.steve_dribble.title": "§eSteve Dribble",
-  "painting.jokemod.steve_dribble.author": "§7Classy Chair"
+  "painting.jokemod.steve_dribble.author": "§7Classy Chair",
+  "item.jokemod.salt": "Salt",
+  "item.jokemod.smelling_salt": "Smelling Salt",
+  "item.jokemod.salt_block": "Salt Block",
+  "item.jokemod.salt_crystal": "Salt Crystal",
+  "effect.jokemod.smelling_salt_effect": "Smelling Salt Effect"
 }

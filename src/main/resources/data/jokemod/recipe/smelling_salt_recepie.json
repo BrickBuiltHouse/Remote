@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "minecraft:fermented_spider_eye",
+    "jokemod:salt"
+  ],
+  "result": {
+    "id": "jokemod:smelling_salt",
+    "count": 1
+  }
+}

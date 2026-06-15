@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "jokemod:salt_crystal"
+  ],
+  "result": {
+    "id": "jokemod:salt",
+    "count": 2
+  }
+}

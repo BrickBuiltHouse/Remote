@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "jokemod:block/salt_block"
+    }
+  }
+}

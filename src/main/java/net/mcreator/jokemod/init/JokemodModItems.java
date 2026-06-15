@@ -35,6 +35,10 @@ public class JokemodModItems {
 	public static final DeferredItem<Item> THE_KNIFE;
 	public static final DeferredItem<Item> BLOOD_GUSHER_SPAWN_EGG;
 	public static final DeferredItem<Item> METAL_BAT;
+	public static final DeferredItem<Item> SALT;
+	public static final DeferredItem<Item> SMELLING_SALT;
+	public static final DeferredItem<Item> SALT_BLOCK;
+	public static final DeferredItem<Item> SALT_CRYSTAL;
 	static {
 		TRIPMINE = block(JokemodModBlocks.TRIPMINE);
 		TRIPSTUD = register("tripstud", TripstudItem::new);
@@ -52,6 +56,10 @@ public class JokemodModItems {
 		THE_KNIFE = register("the_knife", TheKnifeItem::new);
 		BLOOD_GUSHER_SPAWN_EGG = register("blood_gusher_spawn_egg", properties -> new SpawnEggItem(JokemodModEntities.BLOOD_GUSHER.get(), properties));
 		METAL_BAT = register("metal_bat", MetalBatItem::new);
+		SALT = register("salt", SaltItem::new);
+		SMELLING_SALT = register("smelling_salt", SmellingSaltItem::new);
+		SALT_BLOCK = block(JokemodModBlocks.SALT_BLOCK);
+		SALT_CRYSTAL = register("salt_crystal", SaltCrystalItem::new);
 	}
 
 	// Start of user code block custom items
