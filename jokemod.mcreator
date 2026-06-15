@@ -739,7 +739,7 @@
       "name": "Bleed",
       "type": "potioneffect",
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "bleed",
       "metadata": {
         "files": [
@@ -1321,12 +1321,25 @@
       "painting.jokemod.iamgreen.title": "§eI AM GREEN",
       "painting.jokemod.iamgreen.author": "§8???",
       "painting.jokemod.steve_dribble.title": "§eSteve Dribble",
-      "painting.jokemod.steve_dribble.author": "§7Classy Chair"
+      "painting.jokemod.steve_dribble.author": "§7Classy Chair",
+      "item.jokemod.the_bloodedge": "The Bloodedge",
+      "item.jokemod.the_bloodedge.description_0": "meh... *listens to music*",
+      "entity.jokemod.wobbler": "Wobbler",
+      "item.jokemod.wobbler_spawn_egg": "Wobbler Spawn Egg",
+      "item.jokemod.surprise_juice.description_0": "the red label means its good stuff",
+      "item.jokemod.surprise_juice": "Surprise Juice",
+      "item.jokemod.salt_crystal": "Salt Crystal",
+      "item.jokemod.smelling_salt": "Smelling Salt",
+      "item.jokemod.salt": "Salt",
+      "item.jokemod.salt_block": "Salt Block",
+      "effect.jokemod.smelling_salt_effect": "Smelling Salt Effect"
     }
   },
   "metadata": {
     "files": [
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModParticleTypes.java",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModParticles.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModMobEffects.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModBlocks.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
@@ -1334,6 +1347,7 @@
       "src/main/java/net/mcreator/jokemod/init/JokemodModEntities.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/jokemod/init/JokemodModModels.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
       "src/main/java/net/mcreator/jokemod/JokemodMod.java",
       "src/main/resources/META-INF/accesstransformer.cfg"

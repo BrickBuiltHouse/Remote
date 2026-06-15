@@ -29,5 +29,16 @@
   "painting.jokemod.iamgreen.title": "§eI AM GREEN",
   "painting.jokemod.iamgreen.author": "§8???",
   "painting.jokemod.steve_dribble.title": "§eSteve Dribble",
-  "painting.jokemod.steve_dribble.author": "§7Classy Chair"
+  "painting.jokemod.steve_dribble.author": "§7Classy Chair",
+  "item.jokemod.the_bloodedge": "The Bloodedge",
+  "item.jokemod.the_bloodedge.description_0": "meh... *listens to music*",
+  "entity.jokemod.wobbler": "Wobbler",
+  "item.jokemod.wobbler_spawn_egg": "Wobbler Spawn Egg",
+  "item.jokemod.surprise_juice.description_0": "the red label means its good stuff",
+  "item.jokemod.surprise_juice": "Surprise Juice",
+  "item.jokemod.salt_crystal": "Salt Crystal",
+  "item.jokemod.smelling_salt": "Smelling Salt",
+  "item.jokemod.salt": "Salt",
+  "item.jokemod.salt_block": "Salt Block",
+  "effect.jokemod.smelling_salt_effect": "Smelling Salt Effect"
 }
