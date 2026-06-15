@@ -43,6 +43,7 @@ public class JokemodModItems {
 	public static final DeferredItem<Item> THE_BLOODEDGE;
 	public static final DeferredItem<Item> WOBBLER_SPAWN_EGG;
 	public static final DeferredItem<Item> SURPRISE_JUICE;
+	public static final DeferredItem<Item> SWAPPER;
 	static {
 		TRIPMINE = block(JokemodModBlocks.TRIPMINE);
 		TRIPSTUD = register("tripstud", TripstudItem::new);
@@ -68,6 +69,7 @@ public class JokemodModItems {
 		THE_BLOODEDGE = register("the_bloodedge", TheBloodedgeItem::new);
 		WOBBLER_SPAWN_EGG = register("wobbler_spawn_egg", properties -> new SpawnEggItem(JokemodModEntities.WOBBLER.get(), properties));
 		SURPRISE_JUICE = register("surprise_juice", SurpriseJuiceItem::new);
+		SWAPPER = register("swapper", SwapperItem::new);
 	}
 
 	// Start of user code block custom items

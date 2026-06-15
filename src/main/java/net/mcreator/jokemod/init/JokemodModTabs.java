@@ -40,6 +40,7 @@ public class JokemodModTabs {
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(JokemodModItems.RAKE.get());
 			tabData.accept(JokemodModItems.METAL_BAT.get());
+			tabData.accept(JokemodModItems.SWAPPER.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(JokemodModItems.CURD.get());
 			tabData.accept(JokemodModItems.STEROID.get());

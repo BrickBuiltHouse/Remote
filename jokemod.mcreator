@@ -1315,6 +1315,21 @@
         ]
       },
       "path": "~/SurpriseLiquid"
+    },
+    {
+      "name": "Swapper",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "swapper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/item/SwapperItem.java",
+          "src/main/resources/assets/jokemod/models/item/swapper.json",
+          "src/main/resources/assets/jokemod/items/swapper.json"
+        ]
+      },
+      "path": "~/Swapper"
     }
   ],
   "variable_elements": [],
@@ -1406,7 +1421,8 @@
       "entity.jokemod.wobbler": "Wobbler",
       "item.jokemod.wobbler_spawn_egg": "Wobbler Spawn Egg",
       "item.jokemod.surprise_juice.description_0": "the red label means its good stuff",
-      "item.jokemod.surprise_juice": "Surprise Juice"
+      "item.jokemod.surprise_juice": "Surprise Juice",
+      "item.jokemod.swapper": "Swapper"
     }
   },
   "metadata": {
@@ -1485,6 +1501,10 @@
       },
       {
         "name": "Effects",
+        "children": []
+      },
+      {
+        "name": "Swapper",
         "children": []
       }
     ]
