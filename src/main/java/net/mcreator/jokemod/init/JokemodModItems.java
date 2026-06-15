@@ -42,6 +42,8 @@ public class JokemodModItems {
 	public static final DeferredItem<Item> SMELLING_SALT;
 	public static final DeferredItem<Item> SALT;
 	public static final DeferredItem<Item> SALT_BLOCK;
+	public static final DeferredItem<Item> PUNGENT_SWORD;
+	public static final DeferredItem<Item> SWAPPER;
 	static {
 		TRIPMINE = block(JokemodModBlocks.TRIPMINE);
 		TRIPSTUD = register("tripstud", TripstudItem::new);
@@ -66,6 +68,8 @@ public class JokemodModItems {
 		SMELLING_SALT = register("smelling_salt", SmellingSaltItem::new);
 		SALT = register("salt", SaltItem::new);
 		SALT_BLOCK = block(JokemodModBlocks.SALT_BLOCK);
+		PUNGENT_SWORD = register("pungent_sword", PungentSwordItem::new);
+		SWAPPER = register("swapper", SwapperItem::new);
 	}
 
 	// Start of user code block custom items

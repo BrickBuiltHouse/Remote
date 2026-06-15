@@ -18,5 +18,8 @@ public class RoidRageMobEffect extends MobEffect {
 		this.addAttributeModifier(Attributes.MOVEMENT_SPEED, ResourceLocation.fromNamespaceAndPath(JokemodMod.MODID, "effect.roid_rage_1"), 0.2, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
 		this.addAttributeModifier(Attributes.ATTACK_DAMAGE, ResourceLocation.fromNamespaceAndPath(JokemodMod.MODID, "effect.roid_rage_2"), 0.2, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
 		this.addAttributeModifier(Attributes.SCALE, ResourceLocation.fromNamespaceAndPath(JokemodMod.MODID, "effect.roid_rage_3"), 0.2, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
+		this.addAttributeModifier(Attributes.BLOCK_INTERACTION_RANGE, ResourceLocation.fromNamespaceAndPath(JokemodMod.MODID, "effect.roid_rage_4"), 0.2, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
+		this.addAttributeModifier(Attributes.ENTITY_INTERACTION_RANGE, ResourceLocation.fromNamespaceAndPath(JokemodMod.MODID, "effect.roid_rage_5"), 0.2, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
+		this.addAttributeModifier(Attributes.GRAVITY, ResourceLocation.fromNamespaceAndPath(JokemodMod.MODID, "effect.roid_rage_6"), 0.2, AttributeModifier.Operation.ADD_MULTIPLIED_BASE);
 	}
 }

@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "id": "jokemod:deleted_mod_element"
+      "id": "jokemod:surprise_juice"
     },
     "title": {
       "translate": "advancements.more_juice.title"
@@ -20,7 +20,7 @@
       "conditions": {
         "item": {
           "items": [
-            "jokemod:deleted_mod_element"
+            "jokemod:surprise_juice"
           ]
         }
       }

@@ -99,6 +99,8 @@ public class CurdMaceItem extends Item {
 				damageSource = attacker.damageSources().mobAttack(attacker);
 			}
 
+			attacker.setDeltaMovement(attacker.getDeltaMovement().scale(-0.3D));
+
 			target.hurt(damageSource, bonusDamage);
 
 			target.removeAllEffects();

@@ -1,0 +1,39 @@
+{
+  "_fv": 79,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Pungent Sword Effect",
+    "icon": "roid_rage",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "onAddedSound": {
+      "value": ""
+    },
+    "isInstant": false,
+    "mobEffectCategory": "NEUTRAL",
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "isCuredbyHoney": false,
+    "modifiers": [
+      {
+        "attribute": {
+          "value": "MOVEMENT_SPEED"
+        },
+        "amount": 0.1,
+        "operation": "ADD_MULTIPLIED_BASE"
+      },
+      {
+        "attribute": {
+          "value": "ATTACK_DAMAGE"
+        },
+        "amount": 0.1,
+        "operation": "ADD_MULTIPLIED_BASE"
+      }
+    ],
+    "onExpired": {
+      "name": "PungentSwordEffectEffectExpires"
+    }
+  }
+}

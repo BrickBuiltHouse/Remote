@@ -36,9 +36,11 @@ public class JokemodModTabs {
 			tabData.accept(JokemodModItems.CURD_MACE.get());
 			tabData.accept(JokemodModItems.THE_KNIFE.get());
 			tabData.accept(JokemodModItems.THE_BLOODEDGE.get());
+			tabData.accept(JokemodModItems.PUNGENT_SWORD.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(JokemodModItems.RAKE.get());
 			tabData.accept(JokemodModItems.METAL_BAT.get());
+			tabData.accept(JokemodModItems.SWAPPER.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
 			tabData.accept(JokemodModItems.CURD.get());
 			tabData.accept(JokemodModItems.STEROID.get());

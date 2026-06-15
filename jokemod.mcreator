@@ -739,7 +739,7 @@
       "name": "Bleed",
       "type": "potioneffect",
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "bleed",
       "metadata": {
         "files": [
@@ -1245,6 +1245,91 @@
         ]
       },
       "path": "~/Salt"
+    },
+    {
+      "name": "PungentSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pungent_sword",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/item/PungentSwordItem.java",
+          "src/main/resources/assets/jokemod/items/pungent_sword.json",
+          "src/main/resources/assets/jokemod/models/item/pungent_sword.json"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "PungentSwordEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pungent_sword_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/potion/PungentSwordEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "PungentSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pungent_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/PungentSwordLivingEntityIsHitWithToolProcedure.java"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "PungentSwordEffectEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pungent_sword_effect_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/PungentSwordEffectEffectExpiresProcedure.java"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "Swapper",
+      "type": "item",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "swapper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/item/SwapperItem.java",
+          "src/main/resources/assets/jokemod/models/item/swapper.json",
+          "src/main/resources/assets/jokemod/items/swapper.json"
+        ]
+      },
+      "path": "~/Swapper"
     }
   ],
   "variable_elements": [],
@@ -1272,6 +1357,7 @@
       "~CUSTOM:TheKnife"
     ],
     "ITEMS:minecraft:swords": [
+      "~CUSTOM:PungentSword",
       "~CUSTOM:TheBloodedge"
     ],
     "ITEMS:jokemod:the_bloodedge_repair_items": [
@@ -1338,8 +1424,6 @@
   "metadata": {
     "files": [
       "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
-      "src/main/java/net/mcreator/jokemod/init/JokemodModParticleTypes.java",
-      "src/main/java/net/mcreator/jokemod/init/JokemodModParticles.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModMobEffects.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModBlocks.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModItems.java",
@@ -1347,7 +1431,6 @@
       "src/main/java/net/mcreator/jokemod/init/JokemodModEntities.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta",
-      "src/main/java/net/mcreator/jokemod/init/JokemodModModels.java",
       "src/main/java/net/mcreator/jokemod/init/JokemodModTabs.java",
       "src/main/java/net/mcreator/jokemod/JokemodMod.java",
       "src/main/resources/META-INF/accesstransformer.cfg"
@@ -1407,6 +1490,10 @@
       },
       {
         "name": "MetalBat",
+        "children": []
+      },
+      {
+        "name": "Swapper",
         "children": []
       },
       {

@@ -16,8 +16,10 @@ import net.minecraft.core.registries.Registries;
 
 import net.mcreator.jokemod.procedures.SmellingSaltEffectEffectExpiresProcedure;
 import net.mcreator.jokemod.procedures.RoidRageEffectExpiresProcedure;
+import net.mcreator.jokemod.procedures.PungentSwordEffectEffectExpiresProcedure;
 import net.mcreator.jokemod.potion.SmellingSaltEffectMobEffect;
 import net.mcreator.jokemod.potion.RoidRageMobEffect;
+import net.mcreator.jokemod.potion.PungentSwordEffectMobEffect;
 import net.mcreator.jokemod.potion.JumpLockMobEffect;
 import net.mcreator.jokemod.potion.BleedMobEffect;
 import net.mcreator.jokemod.JokemodMod;
@@ -29,6 +31,7 @@ public class JokemodModMobEffects {
 	public static final DeferredHolder<MobEffect, MobEffect> ROID_RAGE = REGISTRY.register("roid_rage", () -> new RoidRageMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> BLEED = REGISTRY.register("bleed", () -> new BleedMobEffect());
 	public static final DeferredHolder<MobEffect, MobEffect> SMELLING_SALT_EFFECT = REGISTRY.register("smelling_salt_effect", () -> new SmellingSaltEffectMobEffect());
+	public static final DeferredHolder<MobEffect, MobEffect> PUNGENT_SWORD_EFFECT = REGISTRY.register("pungent_sword_effect", () -> new PungentSwordEffectMobEffect());
 
 	@SubscribeEvent
 	public static void onEffectRemoved(MobEffectEvent.Remove event) {
@@ -51,6 +54,8 @@ public class JokemodModMobEffects {
 			RoidRageEffectExpiresProcedure.execute(entity);
 		} else if (effectInstance.getEffect().is(SMELLING_SALT_EFFECT)) {
 			SmellingSaltEffectEffectExpiresProcedure.execute(entity.level(), entity);
+		} else if (effectInstance.getEffect().is(PUNGENT_SWORD_EFFECT)) {
+			PungentSwordEffectEffectExpiresProcedure.execute(entity.level(), entity);
 		}
 	}
 }
