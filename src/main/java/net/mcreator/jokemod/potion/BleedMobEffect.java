@@ -12,6 +12,8 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.mcreator.jokemod.procedures.BleedUsDryProcedure;
 import net.mcreator.jokemod.init.JokemodModParticleTypes;
 import net.mcreator.jokemod.JokemodMod;
+import net.mcreator.jokemod.init.JokemodModMobEffects;
+
 
 public class BleedMobEffect extends MobEffect {
 	public BleedMobEffect() {
@@ -20,13 +22,15 @@ public class BleedMobEffect extends MobEffect {
 	}
 
 	@Override
-	public boolean shouldApplyEffectTickThisTick(int duration, int amplifier) {
-		return true;
-	}
+   	public boolean applyEffectTick(final ServerLevel level, final LivingEntity mob, final int amplification) {
+      mob.hurtServer(level, mob.damageSources().magic(), mob instanceof LivingEntity _livEnt && _livEnt.hasEffect(JokemodModMobEffects.BLEED) ? _livEnt.getEffect(JokemodModMobEffects.BLEED).getAmplifier() * 2 : 0);
 
-	@Override
-	public boolean applyEffectTick(ServerLevel level, LivingEntity entity, int amplifier) {
-		BleedUsDryProcedure.execute(level, entity);
-		return super.applyEffectTick(level, entity, amplifier);
-	}
+      return true;
+   }
+
+   @Override
+   public boolean shouldApplyEffectTickThisTick(final int tickCount, final int amplification) {
+      int interval = 20;
+      return interval > 0 ? tickCount % interval == 0 : true;
+   }
 }
