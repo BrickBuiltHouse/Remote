@@ -35,6 +35,7 @@ public class JokemodModTabs {
 			tabData.accept(JokemodModItems.BRICK_WALL_BOOTS.get());
 			tabData.accept(JokemodModItems.CURD_MACE.get());
 			tabData.accept(JokemodModItems.THE_KNIFE.get());
+			tabData.accept(JokemodModItems.PUNGENT_SWORD.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(JokemodModItems.RAKE.get());
 			tabData.accept(JokemodModItems.METAL_BAT.get());

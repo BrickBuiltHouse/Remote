@@ -1050,6 +1050,76 @@
         ]
       },
       "path": "~/Salt"
+    },
+    {
+      "name": "PungentSwordEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pungent_sword_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/jokemod/potion/PungentSwordEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "PungentSword",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pungent_sword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/jokemod/models/item/pungent_sword.json",
+          "src/main/resources/assets/jokemod/items/pungent_sword.json",
+          "src/main/java/net/mcreator/jokemod/item/PungentSwordItem.java"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "PungentSwordLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pungent_sword_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/PungentSwordLivingEntityIsHitWithToolProcedure.java"
+        ]
+      },
+      "path": "~/Salt"
+    },
+    {
+      "name": "PungentSwordEffectEffectExpires",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pungent_sword_effect_effect_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/jokemod/procedures/PungentSwordEffectEffectExpiresProcedure.java"
+        ]
+      },
+      "path": "~/Salt"
     }
   ],
   "variable_elements": [],
@@ -1078,6 +1148,9 @@
     ],
     "BLOCKS:minecraft:needs_stone_tool": [
       "~CUSTOM:SaltBlock"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~CUSTOM:PungentSword"
     ]
   },
   "tab_element_order": {},
@@ -1118,7 +1191,9 @@
       "item.jokemod.smelling_salt": "Smelling Salt",
       "item.jokemod.salt_block": "Salt Block",
       "item.jokemod.salt_crystal": "Salt Crystal",
-      "effect.jokemod.smelling_salt_effect": "Smelling Salt Effect"
+      "effect.jokemod.smelling_salt_effect": "Smelling Salt Effect",
+      "effect.jokemod.pungent_sword_effect": "Pungent Sword Effect",
+      "item.jokemod.pungent_sword": "Pungent Sword"
     }
   },
   "metadata": {
