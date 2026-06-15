@@ -1,0 +1,57 @@
+{
+  "_fv": 79,
+  "_type": "tool",
+  "definition": {
+    "toolType": "Sword",
+    "renderType": 0,
+    "blockingRenderType": 0,
+    "texture": "katana",
+    "customModelName": "Normal",
+    "blockingModelName": "Normal blocking",
+    "guiTexture": "",
+    "name": "The Bloodedge",
+    "specialInformation": {
+      "fixedValue": [
+        "meh... *listens to music*"
+      ]
+    },
+    "creativeTabs": [
+      {
+        "value": "COMBAT"
+      }
+    ],
+    "efficiency": 6.0,
+    "attackSpeed": 2.5,
+    "enchantability": 1,
+    "damageVsEntity": 4.5,
+    "usageCount": 1000,
+    "glowCondition": {
+      "fixedValue": false
+    },
+    "repairItems": [
+      {
+        "value": "Blocks.SKULL#2"
+      },
+      {
+        "value": "Blocks.SKULL#3"
+      },
+      {
+        "value": "Blocks.SKULL#4"
+      },
+      {
+        "value": "Blocks.SKULL#5"
+      },
+      {
+        "value": "Blocks.PIGLIN_HEAD"
+      }
+    ],
+    "immuneToFire": false,
+    "blockDropsTier": "IRON",
+    "blocksAffected": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntitySwing": {
+      "name": "BloodedgeBloodSlice"
+    }
+  }
+}

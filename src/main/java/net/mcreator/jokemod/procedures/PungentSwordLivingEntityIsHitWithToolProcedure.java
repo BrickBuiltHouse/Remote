@@ -1,10 +1,6 @@
 package net.mcreator.jokemod.procedures;
 
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.effect.MobEffectInstance;
-
-import net.mcreator.jokemod.init.JokemodModMobEffects;
+import net.neoforged.bus.api.Event;
 
 public class PungentSwordLivingEntityIsHitWithToolProcedure {
 	public static void execute(Entity entity) {

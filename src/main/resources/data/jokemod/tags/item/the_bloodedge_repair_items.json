@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:piglin_head",
+    "minecraft:zombie_head",
+    "minecraft:player_head",
+    "minecraft:creeper_head",
+    "minecraft:dragon_head"
+  ]
+}

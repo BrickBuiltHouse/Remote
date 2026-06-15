@@ -17,6 +17,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.jokemod.entity.WobblerEntity;
 import net.mcreator.jokemod.entity.TripstudThrownEntity;
 import net.mcreator.jokemod.entity.TripFlareEntity;
 import net.mcreator.jokemod.entity.SteroidThrownEntity;
@@ -38,6 +39,10 @@ public class JokemodModEntities {
 			EntityType.Builder.<BloodGusherEntity>of(BloodGusherEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.ridingOffset(-0.6f).sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<WobblerEntity>> WOBBLER = register("wobbler",
+			EntityType.Builder.<WobblerEntity>of(WobblerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -49,11 +54,13 @@ public class JokemodModEntities {
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		TripFlareEntity.init(event);
 		BloodGusherEntity.init(event);
+		WobblerEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(TRIP_FLARE.get(), TripFlareEntity.createAttributes().build());
 		event.put(BLOOD_GUSHER.get(), BloodGusherEntity.createAttributes().build());
+		event.put(WOBBLER.get(), WobblerEntity.createAttributes().build());
 	}
 }

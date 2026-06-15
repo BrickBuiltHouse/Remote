@@ -20,11 +20,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
-import net.mcreator.jokemod.init.JokemodModTabs;
-import net.mcreator.jokemod.init.JokemodModMobEffects;
-import net.mcreator.jokemod.init.JokemodModItems;
-import net.mcreator.jokemod.init.JokemodModEntities;
-import net.mcreator.jokemod.init.JokemodModBlocks;
+import net.mcreator.jokemod.init.*;
 
 import javax.annotation.Nullable;
 
@@ -54,6 +50,7 @@ public class JokemodMod {
 		JokemodModEntities.REGISTRY.register(modEventBus);
 		JokemodModTabs.REGISTRY.register(modEventBus);
 		JokemodModMobEffects.REGISTRY.register(modEventBus);
+		JokemodModParticleTypes.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

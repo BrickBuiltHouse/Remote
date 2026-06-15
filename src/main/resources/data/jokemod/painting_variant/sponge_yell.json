@@ -1,0 +1,11 @@
+{
+  "asset_id": "jokemod:sponge_yell",
+  "height": 1,
+  "width": 1,
+  "title": {
+    "translate": "painting.jokemod.sponge_yell.title"
+  },
+  "author": {
+    "translate": "painting.jokemod.sponge_yell.author"
+  }
+}

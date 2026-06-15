@@ -6,10 +6,10 @@
     "aa"
   ],
   "key": {
-    "a": "jokemod:salt_crystal"
+    "a": "jokemod:deleted_mod_element"
   },
   "result": {
-    "id": "jokemod:salt_block",
+    "id": "jokemod:deleted_mod_element",
     "count": 1
   }
 }
