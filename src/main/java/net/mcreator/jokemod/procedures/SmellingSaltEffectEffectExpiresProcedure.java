@@ -1,6 +1,12 @@
 package net.mcreator.jokemod.procedures;
 
-import net.neoforged.bus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+
+import net.mcreator.jokemod.init.JokemodModMobEffects;
 
 public class SmellingSaltEffectEffectExpiresProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {

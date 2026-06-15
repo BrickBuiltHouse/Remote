@@ -1,10 +1,44 @@
 package net.mcreator.jokemod.entity;
 
-import net.minecraft.nbt.Tag;
-import net.minecraft.network.syncher.EntityDataAccessor;
+import net.neoforged.neoforge.event.entity.RegisterSpawnPlacementsEvent;
+
+import net.minecraft.world.level.storage.ValueOutput;
+import net.minecraft.world.level.storage.ValueInput;
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.gameevent.vibrations.VibrationSystem;
+import net.minecraft.world.level.gameevent.PositionSource;
+import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraft.world.level.gameevent.EntityPositionSource;
+import net.minecraft.world.level.gameevent.DynamicGameEventListener;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
+import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
+import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
+import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.*;
+import net.minecraft.world.damagesource.DamageTypes;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.Difficulty;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Holder;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.jokemod.init.JokemodModEntities;
+
+import javax.annotation.Nullable;
+
+import java.util.function.BiConsumer;
 
 public class WobblerEntity extends PathfinderMob implements VibrationSystem {
-
 	private final DynamicGameEventListener<VibrationSystem.Listener> dynamicGameEventListener = new DynamicGameEventListener(new VibrationSystem.Listener(this));
 	private final VibrationSystem.User vibrationUser = new VibrationUser();
 	private VibrationSystem.Data vibrationData = new VibrationSystem.Data();
@@ -13,26 +47,21 @@ public class WobblerEntity extends PathfinderMob implements VibrationSystem {
 		super(type, world);
 		xpReward = 5;
 		setNoAi(false);
-
 	}
 
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
-
 			@Override
 			protected boolean canPerformAttack(LivingEntity entity) {
 				return this.isTimeToAttack() && this.mob.distanceToSqr(entity) < (this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth()) && this.mob.getSensing().hasLineOfSight(entity);
 			}
-
 		});
 		this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8));
 		this.goalSelector.addGoal(4, new RandomLookAroundGoal(this));
 		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, Player.class, false, false));
-
 	}
 
 	@Override
@@ -88,11 +117,9 @@ public class WobblerEntity extends PathfinderMob implements VibrationSystem {
 	@Override
 	public void tick() {
 		super.tick();
-
 		if (this.level() instanceof ServerLevel serverLevel) {
 			VibrationSystem.Ticker.tick(serverLevel, this.vibrationData, this.vibrationUser);
 		}
-
 	}
 
 	public static void init(RegisterSpawnPlacementsEvent event) {
@@ -108,18 +135,13 @@ public class WobblerEntity extends PathfinderMob implements VibrationSystem {
 		builder = builder.add(Attributes.ARMOR, 5);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 1);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
-
 		builder = builder.add(Attributes.STEP_HEIGHT, 0.6);
-
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 5);
-
 		builder = builder.add(Attributes.ATTACK_KNOCKBACK, 5);
-
 		return builder;
 	}
 
 	private class VibrationUser implements VibrationSystem.User {
-
 		private final WobblerEntity entity = WobblerEntity.this;
 		private final PositionSource positionSource = new EntityPositionSource(this.entity, this.entity.getEyeHeight());
 
@@ -142,5 +164,4 @@ public class WobblerEntity extends PathfinderMob implements VibrationSystem {
 		public void onReceiveVibration(ServerLevel world, BlockPos vibrationPos, Holder<GameEvent> holder, @Nullable Entity vibrationSource, @Nullable Entity projectileShooter, float distance) {
 		}
 	}
-
 }
